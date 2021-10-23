@@ -1,0 +1,131 @@
+.mySwiper {
+  height: 100vh;
+}
+
+.mySwiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mySwiper .main {
+  background: url("https://res.cloudinary.com/osaz/image/upload/v1634689852/Book%20Home/edgjauzwl80kf2mzyvxp.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.mySwiper .main .slide {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .mySwiper .main .slide {
+    width: 90%;
+  }
+}
+
+.mySwiper .main .slide p {
+  font-size: 18px;
+}
+
+.mySwiper .main .slide h1 {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .mySwiper .main .slide h1 {
+    font-size: 40px;
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .mySwiper .main .slide h1 {
+    font-size: 30px;
+  }
+}
+
+.mySwiper .main .slide button {
+  padding: 15px 50px;
+  border: none;
+  font-size: 16px;
+  background: #272640;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mySwiper .main .slide button:hover {
+  background: #065a60;
+  cursor: pointer;
+}
+
+.mySwiper .main2 {
+  background: url("https://res.cloudinary.com/osaz/image/upload/v1634744465/Book%20Home/home-2-slider-2_dahki1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #272640;
+}
+
+.mySwiper .main2 .slide {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .mySwiper .main2 .slide {
+    width: 90%;
+  }
+}
+
+.mySwiper .main2 .slide p {
+  font-size: 18px;
+  color: #065a60;
+}
+
+.mySwiper .main2 .slide h1 {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .mySwiper .main2 .slide h1 {
+    font-size: 40px;
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .mySwiper .main2 .slide h1 {
+    font-size: 30px;
+  }
+}
+
+.mySwiper .main2 .slide button {
+  padding: 15px 50px;
+  border: none;
+  font-size: 16px;
+  background: #272640;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mySwiper .main2 .slide button:hover {
+  background: #065a60;
+  cursor: pointer;
+}
+/*# sourceMappingURL=swiper.css.map */

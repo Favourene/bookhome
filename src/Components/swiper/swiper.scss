@@ -1,0 +1,86 @@
+@import '../../resources';
+.mySwiper {
+  height: 100vh;
+
+  & .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  & .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  & .main {
+    background: url('https://res.cloudinary.com/osaz/image/upload/v1634689852/Book%20Home/edgjauzwl80kf2mzyvxp.jpg');
+    background-size: cover;
+    color: #fff;
+    & .slide {
+      width: 70%;
+      @include mobile-2 {
+        width: 90%;
+      }
+      & p {
+        font-size: 18px;
+      }
+      & h1 {
+        font-size: 60px;
+        padding-bottom: 20px;
+        @include mobile-2 {
+          font-size: 40px;
+          padding: 30px 0  ;
+        }
+        @include mobile-3 {
+          font-size: 30px;
+        }
+      }
+      & button {
+        @include button;
+      }
+    }
+  }
+  & .main2 {
+    background: url('https://res.cloudinary.com/osaz/image/upload/v1634744465/Book%20Home/home-2-slider-2_dahki1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: $color1;
+    & .slide {
+      width: 70%;
+      @include mobile-2 {
+        width: 90%;
+      }
+      & p {
+        font-size: 18px;
+        color: $color2;
+      }
+      & h1 {
+        font-size: 60px;
+        padding-bottom: 20px;
+        @include mobile-2 {
+          font-size: 40px;
+          padding: 30px 0  ;
+        }
+        @include mobile-3 {
+          font-size: 30px;
+        }
+      }
+      & button {
+        @include button;
+      }
+    }
+  }
+}

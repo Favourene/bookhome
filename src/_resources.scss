@@ -1,0 +1,42 @@
+$color1 : #272640 ;
+$color2 :  #065a60;
+$mobile-1 : 1100px;
+$mobile-2 : 800px;
+$mobile-3 : 500px;
+$mobile-4 : 360px;
+
+
+@mixin button {
+ padding: 15px 50px;
+ border: none;
+ font-size: 16px;
+ background: $color1;
+ color: #fff;
+ font-weight: bold;
+ &:hover{
+  background: $color2;
+  cursor: pointer;
+ }
+}
+
+
+@mixin mobile-1{
+  @media (max-width : $mobile-1){
+    @content;
+  }
+}
+@mixin mobile-2{
+  @media (max-width : $mobile-2){
+    @content;
+  }
+}
+@mixin mobile-3{
+  @media (max-width : $mobile-3){
+    @content;
+  }
+}
+@mixin mobile-4{
+  @media (max-width : $mobile-4){
+    @content;
+  }
+}
