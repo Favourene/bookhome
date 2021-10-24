@@ -55,7 +55,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .mySwiper .main .slide h1 {
     font-size: 30px;
   }
@@ -109,7 +109,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .mySwiper .main2 .slide h1 {
     font-size: 30px;
   }

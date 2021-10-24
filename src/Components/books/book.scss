@@ -1,0 +1,78 @@
+@import '../../resources';
+
+.book__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & &-card {
+    width: 18%;
+    text-align: center;
+    padding-bottom: 50px;
+    @include mobile-1 {
+      width: 23%;
+    }
+    @include mobile-2 {
+      width: 31%;
+    }
+     @include mobile-3{
+      width: 46%;
+    }
+     @include mobile-4{
+      width: 48%;
+    }
+    &-img {
+      width: 100%;
+      height: 300px;
+      padding-bottom: 20px;
+@include mobile-4{
+      width: 100%;
+      height: 250px;
+    }
+      & a {
+        width: 100%;
+        height: 100%;
+        & img {
+          width: 100%;
+          height: 100%;
+          box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.34);
+          -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.34);
+          -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.34);
+        }
+        &:hover img {
+          box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.34);
+          -webkit-box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.34);
+          -moz-box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.34);
+        }
+      }
+    }
+    &-h1 {
+      text-decoration: none;
+      color: #212f45;
+      & h1 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px;
+      }
+    }
+    &-p {
+      color: $pcolor;
+      text-decoration: none;
+      text-transform: uppercase;
+      & p {
+        font-size: 13px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &-price {
+      padding: 20px 10px;
+      color: $color2;
+      & span {
+        color: $pcolor;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
