@@ -3,6 +3,8 @@ import './App.css'
 import Navbar from '../../Components/navbar/Navbar'
 import Swiper from '../../Components/swiper/swipers'
 import Best from '../../Components/books/best'
+import Latest from '../../Components/books/latest'
+import Sale from '../../Components/books/sale'
 
 function App() {
   const [book, setBook] = useState('Best')
@@ -46,9 +48,10 @@ function App() {
           </div>
         </div>
         {book === 'Best' && <Best />}
-        {book === 'Latest' && <div className='latest'>hd</div>}
-        {book === 'Sale' && <div className='sale'>hd</div>}
+        {book === 'Latest' && <Latest />}
+        {book === 'Sale' && <Sale />}
       </div>
+      
     </div>
   )
 }

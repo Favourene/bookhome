@@ -5,7 +5,7 @@ $mobile-1 : 1100px;
 $mobile-2 : 800px;
 $mobile-3 : 600px;
 $mobile-4 : 500px;
-
+$mobile-5 : 900px;
 
 @mixin button {
  padding: 15px 50px;
@@ -38,6 +38,11 @@ $mobile-4 : 500px;
 }
 @mixin mobile-4{
   @media (max-width : $mobile-4){
+    @content;
+  }
+}
+@mixin mobile-5{
+  @media (max-width : $mobile-5){
     @content;
   }
 }

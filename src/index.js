@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './index.css';
 import App from './Pages/home/App'
+import Footer from './Components/footer/footer';
 
 ReactDOM.render(
   <Router>
@@ -11,6 +12,7 @@ ReactDOM.render(
         <App />
       </Route>
     </Switch>
+    <Footer />
   </Router>,
   document.getElementById('root')
 )

@@ -1,10 +1,11 @@
 import React from 'react'
-import Best from './bestdata'
+import Latest from './latestdata'
 import './book.css'
+
 function latest() {
-  return (
-    <div className='book__wrap'>
-      {Best.map((best)=>{
+ return (
+   <div className='book__wrap'>
+     {Latest.map((best) => {
        return (
          <div key={best.id} className='book__wrap-card'>
            <div className='book__wrap-card-img'>
@@ -23,9 +24,9 @@ function latest() {
            </p>
          </div>
        )
-      })}
-    </div>
-  )
+     })}
+   </div>
+ )
 }
 
 export default latest

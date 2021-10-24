@@ -1,0 +1,74 @@
+@import '../../resources';
+
+.footer {
+  background: $color1;
+  padding: 50px;
+  @include mobile-3 {
+        padding: 50px 20px;
+       
+      }
+  & &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+      
+    &-img {
+      text-align: center;
+      width: 20%;
+        @include mobile-3 {
+        padding-bottom: 50px;
+       
+      }
+      & img {
+        width: 200px;
+        padding-bottom: 20px;
+          @include mobile-3 {
+        width: 100%;
+       padding-bottom: 30px;
+      }
+      }
+      & p {
+        color: #fff;
+      }
+    }
+    &-list {
+      & li {
+        list-style: none;
+        padding: 10px 0;
+        & a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+          }
+        }
+      }
+    }
+    &-cont {
+      & li {
+        color: #fff;
+        padding: 10px 0;
+        & a {
+          color: burlywood;
+          text-decoration: none;
+          & .me {
+            padding-bottom: 5px;
+            border-bottom: 3px dotted burlywood;
+          }
+        }
+      }
+    }
+    & div {
+      @include mobile-5 {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+        @include mobile-3 {
+        width: 100%;
+       
+      }
+    }
+  }
+}
