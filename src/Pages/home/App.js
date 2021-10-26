@@ -5,6 +5,7 @@ import Swiper from '../../Components/swiper/swipers'
 import Best from '../../Components/books/best'
 import Latest from '../../Components/books/latest'
 import Sale from '../../Components/books/sale'
+import Newsletter from '../../Components/newsletter/newsletter'
 
 function App() {
   const [book, setBook] = useState('Best')
@@ -51,7 +52,7 @@ function App() {
         {book === 'Latest' && <Latest />}
         {book === 'Sale' && <Sale />}
       </div>
-      
+      <Newsletter />
     </div>
   )
 }

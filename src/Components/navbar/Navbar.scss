@@ -39,9 +39,13 @@ nav {
 .nav-links li a:hover {
   color: #065a60;
 }
+
 .nav-links li {
   position: relative;
   padding: 0 10px;
+}
+.nav-links li a svg{
+  font-size: 25px;
 }
 
 /*Styling Hamburger Icon*/
@@ -88,6 +92,7 @@ nav {
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
+
   .nav-links li {
     opacity: 0;
   }
@@ -121,6 +126,13 @@ nav {
     margin: 0;
   }
 }
+  @media screen and (min-height : 1024px){
+     .nav-links.open {
+    clip-path: circle(1100px at 90% -10%);
+    -webkit-clip-path: circle(1100px at 90% -10%);
+    pointer-events: all;
+  }
+  }
 @media screen and (max-width: 500px) {
   nav {
     height: 4rem;

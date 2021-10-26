@@ -1,0 +1,67 @@
+@import '../../resources' ;
+
+.newsletter{
+ background-image: url('https://res.cloudinary.com/osaz/image/upload/v1635209895/Book%20Home/oy8bqgeoayvhycrgdlwm_nhq6ki.jpg');
+ background-size: cover;
+ background-position: center;
+ height: 70vh;
+ display: flex;
+ align-items: center;
+ justify-content: right;
+ padding: 50px;
+ @include mobile-3{
+   padding: 50px 20px;
+   background-position: right;
+  }
+ & &__wrap{
+  width: 50%;
+  text-align: center;
+  @include mobile-5{
+   width: 70%;
+  }
+  @include mobile-3{
+   width: 100%;
+  }
+  & h1{
+   color: $color1;
+   font-size: 40px;
+   font-weight: 900;padding-bottom: 10px;
+   @include mobile-4{
+   font-size: 30px;
+  }
+  }
+  & p{
+   color: #555;
+   letter-spacing: .5px;
+   line-height: 25px;
+   padding-bottom: 30px;
+  }
+  & form{
+   border-bottom: 1px solid $color1;
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 20px;
+   & input{
+    width: 80%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background: none;
+    &::placeholder{
+     color: #000;
+    }
+   }
+   & button{
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: $color1;
+    cursor: pointer;
+    font-size: 15px;
+    &:hover{
+     color: $color2;
+    }
+   }
+  }
+ }
+}

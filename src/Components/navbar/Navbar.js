@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { BsBag } from 'react-icons/bs';
 import Logo from './logo.png'
 import './Navbar.css'
 
@@ -72,6 +73,16 @@ const Navbar = () => {
               to='/contact'
             >
               Contact Us
+            </NavLink>
+          </li>
+          <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
+            <NavLink
+              activeClassName='navbar__link--active'
+              className='link'
+              to='/contact'
+            >
+              <BsBag />
+              <span>0</span>
             </NavLink>
           </li>
         </ul>
