@@ -329,6 +329,240 @@ const Data = [
     Year: 2018,
     Language: 'English',
   },
+  {
+    id: 21,
+    Title: 'Ugly Love',
+    Author: 'Colleen Hoover',
+    AuthorLink: 'colleen-hoover',
+    Links: 'Ugly-Love',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635284826/Book%20Home/Books/Special%20Offers/eba501594ab62859df0601e626eb7631_qlymbe.jpg',
+    OldPrice: '$30',
+    Price: 25,
+    Publisher: 'Atria Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 337,
+    Year: 2014,
+    Language: 'English',
+  },
+  {
+    id: 22,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635281326/Book%20Home/Books/Special%20Offers/Lost-and-Found-A-Novel-Hardcover-by-Danielle-Steel-600x913_bvfjd2.jpg',
+    Title: 'Lost and Found: A Novel',
+    Author: 'DANIELLE STEEL',
+    Price: '20.00',
+    OldPrice: '$21.0',
+    AuthorLink: 'danielle-steel',
+    Links: 'Lost-and-Found:-A-Novel',
+    Publisher: 'Ballantine Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 350,
+    Year: 2019,
+    Language: 'English',
+  },
+  {
+    id: 23,
+    Title: 'The Feather Thief',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635281936/Book%20Home/Books/Special%20Offers/The-Feather-Thief-by-Kirk-Wallace-Johnson-600x906_tk7vmr.jpg',
+    Author: 'Kirk Wallace Johnson',
+    Price: '18.00',
+    OldPrice: '$26.0',
+    AuthorLink: 'kirk-wallace-johnson',
+    Links: 'The-Feather-Thief',
+    Publisher: 'Disney-Hyperion',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 212,
+    Year: 2018,
+    Language: 'English',
+  },
+  {
+    id: 24,
+    Title: 'Becoming',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635283992/Book%20Home/Books/Special%20Offers/Becoming-by-Michelle-Obama-600x912_pzxqsv.jpg',
+    Price: '35.00',
+    OldPrice: '$40.00',
+    Author: 'Michelle Obama',
+    AuthorLink: 'michelle-obama',
+    Links: 'Becoming',
+    Publisher: 'Viking',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 448,
+    Year: 2018,
+    Language: 'English',
+  },
+  {
+    id: 25,
+    Title: 'The Invisible Life of Addie LaRue',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635284514/Book%20Home/Books/Special%20Offers/054045f48d75d227d92c8dfa6f03ed15_fuxabj.png',
+    Price: '35.00',
+    OldPrice: '$40.00',
+    Author: 'V. E. Schwab',
+    AuthorLink: 'V-E-Schwab',
+    Links: 'The-Invisible-Life-of-Addie-LaRue',
+    Publisher: 'Tor Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 448,
+    Year: 2020,
+    Language: 'English',
+  },
+  {
+    id: 26,
+    Title: 'Black Leopard, Red Wolf (The Dark Star Trilogy)',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635312052/Book%20Home/Books/Special%20Offers/Black-Leopard-Red-Wolf-The-Dark-Star-Trilogy-by-Marlon-James-600x912_quo64c.jpg',
+    Price: '15.00',
+    OldPrice: '$20.00',
+    Author: 'Marlon James',
+    AuthorLink: 'marlon-james',
+    Links: 'Black-Leopard-Red-Wolf-(The-Dark-Star-Trilogy)',
+    Publisher: 'Riverhead Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 640,
+    Year: 2019,
+    Language: 'English',
+  },
+  {
+    id: 27,
+    Title: 'Tell Me A Story: 250 Great Books for Kids',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635321853/Book%20Home/Books/Children%20Books/2dbe8e8732355553103e881ef63efeac_ezwtjw.jpg',
+    Price: '45.00',
+    OldPrice: '$51.00',
+    Author: 'Sandford, Grace',
+    AuthorLink: 'sandford-grace',
+    Links: 'Tell-Me-A-Story:-250-Great-Books-for-Kids',
+    Publisher: 'Team Sandford',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 416,
+    Year: 2016,
+    Language: 'English',
+  },
+  {
+    id: 28,
+    Title: 'The Cat in the Hat Book and Jigsaw Pack',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635320103/Book%20Home/Books/Children%20Books/632f1c34075b5fb3a14dc8a94587f2d3_mkwryy.jpg',
+    Price: '16.00',
+    OldPrice: '$20.00',
+    Author: 'Dr. Seuss',
+    AuthorLink: 'dr-seuss',
+    Links: 'The-Cat-in-the-Hat-Book-and-Jigsaw-Pack',
+    Publisher: 'Random House Children’s Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 64,
+    Year: 1970,
+    Language: 'English',
+  },
+  {
+    id: 29,
+    Title: 'Frozen Junior Novel',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635322133/Book%20Home/Books/Children%20Books/cedc17b711d458a3e4740f419efc7646_e2mfrr.jpg',
+    Price: '26.00',
+    Author: 'Disney Book Group',
+    AuthorLink: 'disney-book-group',
+    Links: 'Frozen-Junior-Novel',
+    Publisher: 'Disney Electronic Content',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 64,
+    Year: 2021,
+    Language: 'English',
+  },
+  {
+    id: 30,
+    Title: 'Fantastic Mr. Fox',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635322885/Book%20Home/Books/Children%20Books/113eca31ee7e25a3865d1623d730aa57_swpiyp.jpg',
+    Price: '21.00',
+    Author: 'Dahl, Roald',
+    AuthorLink: 'dahl-roald',
+    Links: 'Fantastic-Mr-Fox',
+    Publisher: 'Puffin',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: '96 / 41',
+    Year: 1988,
+    Language: 'English',
+  },
+  {
+    id: 31,
+    Title:
+      'The political economy of Stalinism: evidence from the Soviet secret archives',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635373330/Book%20Home/Books/Biography%20Books/cbefaeb3bdfc32dac11fecaf7802bcbe_a60kci.jpg',
+    Price: '32.00',
+    Author: 'Paul R. Gregory',
+    AuthorLink: 'paul-r-gregory',
+    Links:
+      'The-political-economy-of Stalinism:-evidence-from-the-Soviet-secret-archives',
+    Publisher: 'Cambridge University Press',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 321,
+    Year: 2004,
+    Language: 'English',
+  },
+  {
+    id: 32,
+    Title: 'Ain’t I a Woman: Black Women and Feminism',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635373645/Book%20Home/Books/Biography%20Books/39b2db66836139d6193b1af46494d3bc_eiuvgi.jpg',
+    Price: '25.00',
+    Author: 'Bell Hooks',
+    AuthorLink: 'bell-hooks',
+    Links: 'Ain’t-I-a-Woman:-Black-Women-and-Feminism',
+    Publisher: 'Routledge',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 205,
+    Year: 2014,
+    Language: 'English',
+  },
+  {
+    id: 33,
+    Title: 'Hitler A Biography',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635376171/Book%20Home/Books/Biography%20Books/32f840078ba820d154085340101c787f_fb143k.jpg',
+    Price: '25.00',
+    Author: 'Ian Kershaw',
+    AuthorLink: 'ian-kershaw',
+    Links: 'Hitler-A-Biography',
+    Publisher: 'W. W. Norton & Company',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 488,
+    Year: 2010,
+    Language: 'English',
+  },
+  {
+    id: 34,
+    Title: 'Einstein: His Life and Universe',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635376446/Book%20Home/Books/Biography%20Books/edceb4c90267dfdbd47cd6f781d1b141_gditr9.jpg',
+    Price: '25.00',
+    Author: 'Walter Isaacson',
+    AuthorLink: 'walter-isaacson',
+    Links: 'Einstein:-His-Life-and-Universe',
+    Publisher: 'Simon & Schuster',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 704,
+    Year: 2007,
+    Language: 'English',
+  },
 ]
 
 export default Data

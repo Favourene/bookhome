@@ -6,6 +6,7 @@ import Best from '../../Components/books/best'
 import Latest from '../../Components/books/latest'
 import Sale from '../../Components/books/sale'
 import Newsletter from '../../Components/newsletter/newsletter'
+import BookDisplay from '../../Components/bookDisplay/bookDisplay'
 
 function App() {
   const [book, setBook] = useState('Best')
@@ -53,6 +54,7 @@ function App() {
         {book === 'Sale' && <Sale />}
       </div>
       <Newsletter />
+      <BookDisplay />
     </div>
   )
 }

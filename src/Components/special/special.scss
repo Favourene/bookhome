@@ -1,0 +1,57 @@
+@import '../../resources';
+.specia {
+  background: #fff;
+}
+.special-head {
+  width: 100%;
+  background: $color2;
+  text-align: center;
+  margin-bottom: 50px;
+  & h1 {
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+}
+.special {
+  height: 100%;
+  padding: 0 20px;
+  & &__card {
+    text-align: center;
+    &-author {
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      &:hover{
+        color: $color2;
+      }
+    }
+    & a{
+      text-decoration: none;
+      color: #000;
+      font-size: 17px;
+    }
+    h1 {
+      color: $color1;
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+   &-image{
+     width: 100%;
+     height: 450px;
+      & img {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 30px;
+    }
+   }
+    &-price {
+      font-size: 20px;
+      padding-bottom: 50px;
+      color: $color2;
+      & span {
+        color: #555;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
