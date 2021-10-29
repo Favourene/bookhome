@@ -563,6 +563,39 @@ const Data = [
     Year: 2007,
     Language: 'English',
   },
+  {
+    id: 35,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635463168/Book%20Home/Books/Authors/Danielle-steel/Blessing-in-Disguise-A-Novel-by-Danielle-Steel-300x456_xbe1lj.jpg',
+    Title: 'Blessing in Disguise: A Novel',
+    Author: 'DANIELLE STEEL',
+    Price: '20.00',
+    AuthorLink: 'danielle-steel',
+    Links: 'Blessing-in-Disguise:-A-Novel',
+    Publisher: 'Ballantine Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 256,
+    Year: 1994,
+    Language: 'English',
+  },
+  {
+    id: 36,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635463176/Book%20Home/Books/Authors/Danielle-steel/Silent-Night-A-Novel-by-Danielle-Steel-300x456_p3udqb.jpg',
+    Title: 'Silent Night: A Novel',
+    Author: 'DANIELLE STEEL',
+    Price: '27.50',
+    OldPrice: '$34.67',
+    AuthorLink: 'danielle-steel',
+    Links: 'Silent-Night:-A-Novel',
+    Publisher: 'Ballantine Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 270,
+    Year: 2019,
+    Language: 'English',
+  },
 ]
 
 export default Data

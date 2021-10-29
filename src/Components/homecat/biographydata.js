@@ -10,12 +10,6 @@ const Data = [
     AuthorLink: 'paul-r-gregory',
     Links:
       'The-political-economy-of Stalinism:-evidence-from-the-Soviet-secret-archives',
-    Publisher: 'Cambridge University Press',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 321,
-    Year: 2004,
-    Language: 'English',
   },
   {
     id: 2,
@@ -26,12 +20,6 @@ const Data = [
     Author: 'Bell Hooks',
     AuthorLink: 'bell-hooks',
     Links: 'Ain’t-I-a-Woman:-Black-Women-and-Feminism',
-    Publisher: 'Routledge',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 205,
-    Year: 2014,
-    Language: 'English',
   },
   {
     id: 3,
@@ -42,12 +30,6 @@ const Data = [
     Author: 'Ian Kershaw',
     AuthorLink: 'ian-kershaw',
     Links: 'Hitler-A-Biography',
-    Publisher: 'W. W. Norton & Company',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 488,
-    Year: 2010,
-    Language: 'English',
   },
   {
     id: 4,
@@ -58,12 +40,6 @@ const Data = [
     Author: 'Walter Isaacson',
     AuthorLink: 'walter-isaacson',
     Links: 'Einstein:-His-Life-and-Universe',
-    Publisher: 'Simon & Schuster',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 704,
-    Year: 2007,
-    Language: 'English',
   },
 ]
 

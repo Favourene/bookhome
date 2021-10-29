@@ -9,12 +9,6 @@ const Data = [
       'https://res.cloudinary.com/osaz/image/upload/v1635284826/Book%20Home/Books/Special%20Offers/eba501594ab62859df0601e626eb7631_qlymbe.jpg',
     OldPrice: '$30',
     Price: 25,
-    Publisher: 'Atria Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 337,
-    Year: 2014,
-    Language: 'English',
   },
   {
     id: 2,
@@ -26,12 +20,6 @@ const Data = [
     OldPrice: '$21.00',
     AuthorLink: 'danielle-steel',
     Links: 'Lost-and-Found:-A-Novel',
-    Publisher: 'Ballantine Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 350,
-    Year: 2019,
-    Language: 'English',
   },
   {
     id: 3,
@@ -43,12 +31,6 @@ const Data = [
     OldPrice: '$26.00',
     AuthorLink: 'kirk-wallace-johnson',
     Links: 'The-Feather-Thief',
-    Publisher: 'Disney-Hyperion',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 212,
-    Year: 2018,
-    Language: 'English',
   },
   {
     id: 4,
@@ -60,12 +42,6 @@ const Data = [
     Author: 'Michelle Obama',
     AuthorLink: 'michelle-obama',
     Links: 'Becoming',
-    Publisher: 'Viking',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 448,
-    Year: 2018,
-    Language: 'English',
   },
   {
     id: 5,
@@ -77,12 +53,6 @@ const Data = [
     Author: 'V. E. Schwab',
     AuthorLink: 'V-E-Schwab',
     Links: 'The-Invisible-Life-of-Addie-LaRue',
-    Publisher: 'Tor Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 448,
-    Year: 2020,
-    Language: 'English',
   },
   {
     id: 6,
@@ -94,12 +64,6 @@ const Data = [
     Author: 'Marlon James',
     AuthorLink: 'marlon-james',
     Links: 'Black-Leopard-Red-Wolf-(The-Dark-Star-Trilogy)',
-    Publisher: 'Riverhead Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 640,
-    Year: 2019,
-    Language: 'English',
   },
 ]
 

@@ -1,0 +1,81 @@
+@import '../../resources';
+
+.book {
+  padding: 50px;
+  @include mobile-1 {
+    padding: 50px 20px;
+  }
+  & &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    @include mobile-2 {
+      flex-wrap: wrap;
+    }
+    &-head {
+      @include mobile-2 {
+        width: 100%;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+      & h1 {
+        font-size: 40px;
+        color: $color1;
+        padding-bottom: 10px;
+      }
+      & p {
+        color: $pcolor;
+      }
+    }
+  }
+  & &__nav {
+    @include mobile-2 {
+      width: 100%;
+    }
+    &-ul {
+      display: flex;
+      @include mobile-2 {
+        justify-content: space-evenly;
+      }
+      @include mobile-3 {
+        justify-content: space-between;
+      }
+      & li {
+        list-style: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        background: $color2;
+        color: #fff;
+        font-weight: bolder;
+        letter-spacing: 0.3px;
+        margin-right: 10px;
+        font-size: 14px;
+         @include mobile-3 {
+      font-size: 12px;
+    }
+         @include mobile-3 {
+      padding: 10px;
+      margin-right: 0;
+    }
+        &.active {
+          background: none;
+          color: $color2;
+          border: 1px solid $color1;
+         
+        }
+      }
+    }
+  }
+}
+.best {
+  height: 40vh;
+  background: violet;
+}
+.latest {
+  height: 40vh;
+  background: firebrick;
+}
+.sale {
+  height: 40vh;
+  background: burlywood;
+}

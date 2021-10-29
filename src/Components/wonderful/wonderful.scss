@@ -1,0 +1,39 @@
+@import '../../resources';
+
+.wonderful {
+  height: 60vh;
+  background-image: url('https://res.cloudinary.com/osaz/image/upload/v1635377548/Book%20Home/q2taiygkfx9eai7e75rk.webp');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mobile-3 {
+    padding: 50px 20px;
+  }
+  & &__wrap {
+    text-align: center;
+    & h1 {
+      font-size: 70px;
+      color: $color1;
+      @include mobile-3 {
+        font-size: 40px;
+        padding-bottom: 10px;
+      }
+    }
+    & p {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #555;
+      padding-bottom: 30px;
+    }
+    & button {
+      @include button;
+      background-color: $color2;
+      &:hover {
+        background-color: $color1;
+      }
+    }
+  }
+}

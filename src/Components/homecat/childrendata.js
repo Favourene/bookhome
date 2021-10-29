@@ -9,12 +9,6 @@ const Data = [
     Author: 'Sandford, Grace',
     AuthorLink: 'sandford-grace',
     Links: 'Tell-Me-A-Story:-250-Great-Books-for-Kids',
-    Publisher: 'Team Sandford',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 416,
-    Year: 2016,
-    Language: 'English',
   },
   {
     id: 2,
@@ -26,12 +20,6 @@ const Data = [
     Author: 'Dr. Seuss',
     AuthorLink: 'dr-seuss',
     Links: 'The-Cat-in-the-Hat-Book-and-Jigsaw-Pack',
-    Publisher: 'Random House Children’s Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 64,
-    Year: 1970,
-    Language: 'English',
   },
   {
     id: 3,
@@ -43,11 +31,6 @@ const Data = [
     AuthorLink: 'disney-book-group',
     Links: 'Frozen-Junior-Novel',
     Publisher: 'Disney Electronic Content',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 64,
-    Year: 2021,
-    Language: 'English',
   },
   {
     id: 4,
@@ -58,12 +41,6 @@ const Data = [
     Author: 'Dahl, Roald',
     AuthorLink: 'dahl-roald',
     Links: 'Fantastic-Mr-Fox',
-    Publisher: 'Puffin',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: '96 / 41',
-    Year: 1988,
-    Language: 'English',
   },
 ]
 
