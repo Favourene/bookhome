@@ -54,7 +54,7 @@ const Navbar = () => {
               className='link'
               to='/seminar'
             >
-              Events
+              Authors
             </NavLink>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
@@ -63,7 +63,7 @@ const Navbar = () => {
               className='link'
               to='/seminar'
             >
-              Blog
+              Categories
             </NavLink>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>

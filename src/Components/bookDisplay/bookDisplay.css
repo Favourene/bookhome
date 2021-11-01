@@ -11,7 +11,7 @@
   padding: 50px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .bookDisplay {
     padding: 50px 20px;
   }
@@ -21,7 +21,7 @@
   width: 30%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .bookDisplay .bookDisplay__left {
     width: 100%;
   }
@@ -33,7 +33,7 @@
   width: 67%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .bookDisplay .bookDisplay__right {
     width: 100%;
   }

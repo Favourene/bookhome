@@ -18,16 +18,16 @@ function footer() {
                 <NavLink to='/'>Home</NavLink>
               </li>
               <li>
-                <NavLink to='/'>About</NavLink>
+                <NavLink to='/about'>About</NavLink>
               </li>
               <li>
                 <NavLink to='/'>Books</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Event</NavLink>
+                <NavLink to='/'>Authors</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Blogs</NavLink>
+                <NavLink to='/'>Categories</NavLink>
               </li>
               <li>
                 <NavLink to='/'>Contact Us</NavLink>

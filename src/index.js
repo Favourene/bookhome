@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './index.css';
 import Footer from './Components/footer/footer';
 import App from './Pages/home/App'
+import About from './Pages/about/About.js'
 import Product from './Components/books/product.js'
 import Scroll from './Scroll'
 
@@ -13,6 +14,9 @@ ReactDOM.render(
     <Switch>
       <Route exact path='/'>
         <App />
+      </Route>
+      <Route exact path='/about'>
+        <About />
       </Route>
       <Route exact path='/books/:Links' children={<Product />}></Route>
     </Switch>

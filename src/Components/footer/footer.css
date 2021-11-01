@@ -80,15 +80,9 @@
 
 @media (max-width: 900px) {
   .footer .footer__wrap div {
-    width: 50%;
+    width: 100%;
     text-align: center;
     padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 600px) {
-  .footer .footer__wrap div {
-    width: 100%;
   }
 }
 /*# sourceMappingURL=footer.css.map */

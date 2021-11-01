@@ -596,6 +596,172 @@ const Data = [
     Year: 2019,
     Language: 'English',
   },
+  {
+    id: 37,
+    Title: `Pete's Dragon Junior Novel`,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635551852/Book%20Home/Books/Top%20Books/9781484749920_xaxgaf.jpg',
+    Price: '34.00',
+    Author: 'Disney Book Group',
+    AuthorLink: 'disney-book-group',
+    Links: `Pete's-Dragon-Junior-Novel`,
+    Publisher: 'Disney Electronic Content',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 64,
+    Year: 2016,
+    Language: 'English',
+  },
+  {
+    id: 38,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635552260/Book%20Home/Books/Top%20Books/Letter-to-My-Daughter-Angelou-Maya-9780812980035_iuxsmy.jpg',
+    Title: 'Letter to My Daughter',
+    Author: 'Maya Angelou',
+    Price: '19.00',
+    OldPrice: '$21.00',
+    AuthorLink: 'maya-angelou',
+    Links: 'Letter-to-My-Daughter',
+    Publisher: '	Random House',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 166,
+    Year: 2009,
+    Language: 'English',
+  },
+  {
+    id: 39,
+    Title: 'All Your Perfects: A Novel',
+    Author: 'Colleen Hoover',
+    AuthorLink: 'colleen-hoover',
+    Links: 'All-Your-Perfects:-A-Novel',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635553625/Book%20Home/Books/Top%20Books/9781501171598_djtfhj.jpg',
+    OldPrice: '$30',
+    Price: 25,
+    Publisher: 'Atria Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 337,
+    Year: 2018,
+    Language: 'English',
+  },
+  {
+    id: 40,
+    Title: `John Crow's Devil`,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635553765/Book%20Home/Books/Top%20Books/9781780748498_cqcxc5.jpg',
+    Price: '15.00',
+    OldPrice: '$20.00',
+    Author: 'Marlon James',
+    AuthorLink: 'marlon-james',
+    Links: `John-Crow's-Devil`,
+    Publisher: '	Oneworld Publications,',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 640,
+    Year: 2019,
+    Language: 'English',
+  },
+  {
+    id: 41,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635555829/Book%20Home/Books/Top%20Books/9781101947371_nubfqn.jpg',
+    Title: 'Dark at the Crossing: A novel',
+    Author: 'ELLIOT ACKERMAN',
+    Price: '10.34',
+    AuthorLink: 'elliot-ackerman',
+    Links: 'Dark-at-the-Crossing:-A-novel',
+    Publisher: 'Knopf',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 192,
+    Year: 2017,
+    Language: 'English',
+  },
+  {
+    id: 42,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635555978/Book%20Home/Books/Top%20Books/The-Battle-of-Britain-Holland-James-9780593059135_lokr5l.jpg',
+    Title: 'The Battle of Britain',
+    Author: 'James Holland',
+    Price: '30.00',
+    OldPrice: '$35.43',
+    AuthorLink: 'james-holland',
+    Links: 'The-Battle-of-Britain',
+    Publisher: '	Transworld Publishers',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 400,
+    Year: 2010,
+    Language: 'English',
+  },
+  {
+    id: 43,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635556091/Book%20Home/Books/Top%20Books/Wildwood-Creek-Wingate-Lisa-9780764208249_zd9fb9.jpg',
+    Title: 'Wildwood Creek',
+    Author: 'Lisa Wingate',
+    Price: '10.00',
+    OldPrice: '$12.98',
+    AuthorLink: 'lisa-wingate',
+    Links: 'Wildwood-Creek',
+    Publisher: 'QuBethany House Publishersercus',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 384,
+    Year: 2014,
+    Language: 'English',
+  },
+  {
+    id: 44,
+    Title: `Inside Out - Driven by Emotions`,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635556233/Book%20Home/Books/Top%20Books/9781484722039_zq9lf8.jpg',
+    Price: '34.00',
+    Author: 'Disney Book Group',
+    AuthorLink: 'disney-book-group',
+    Links: `Inside-Out-Driven-by-Emotions`,
+    Publisher: 'Disney Electronic Content',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 64,
+    Year: 2015,
+    Language: 'English',
+  },
+  {
+    id: 45,
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635556403/Book%20Home/Books/Top%20Books/9780804187183_np1qb7.jpg',
+    Title: 'Tasting Rome',
+    Author: 'KATIE PARLA',
+    Price: '10.45',
+    AuthorLink: 'katie-parla',
+    Links: 'Tasting-Rome',
+    Publisher: 'Clarkson Potter',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 256,
+    Year: 2016,
+    Language: 'English',
+  },
+  {
+    id: 46,
+    Title: 'Yertle the Turtle and Other Stories',
+    Image:
+      'https://res.cloudinary.com/osaz/image/upload/v1635556526/Book%20Home/Books/Top%20Books/Yertle-the-Turtle-and-Other-Stories-Dr-Seuss-9780375844843_sus7nz.jpg',
+    Price: '16.00',
+    OldPrice: '$20.00',
+    Author: 'Dr. Seuss',
+    AuthorLink: 'dr-seuss',
+    Links: 'Yertle-the-Turtle-and-Other-Stories',
+    Publisher: 'Random House Children’s Books',
+    Description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Pages: 64,
+    Year: 1970,
+    Language: 'English',
+  },
 ]
 
 export default Data

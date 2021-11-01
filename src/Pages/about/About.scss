@@ -1,0 +1,147 @@
+@import '../../resources';
+.about {
+  & &__dp {
+    height: 80vh;
+    @include mobile-2 {
+      height: 50vh;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  & &__text {
+    padding: 50px;
+    @include mobile-6 {
+      padding: 50px 20px;
+    }
+    width: 30%;
+    padding-bottom: 50px;
+    @include mobile-6 {
+      width: 50%;
+    }
+    @include mobile-3 {
+      width: 100%;
+    }
+    & h1 {
+      font-size: 50px;
+      color: $color1;
+      padding-bottom: 10px;
+    }
+    & P {
+      color: #444;
+      line-height: 25px;
+      letter-spacing: 0.5px;
+    }
+  }
+  & &__details {
+    display: flex;
+    padding: 0 50px 50px 50px;
+    @include mobile-6 {
+      padding: 0 20px 0 20px;
+    }
+    @include mobile-2 {
+      flex-direction: column;
+    }
+    & p {
+      padding: 0 20px 0 0;
+      @include mobile-2 {
+        padding-bottom: 30px;
+      }
+      @include mobile-4 {
+        padding-right: 0;
+      }
+    }
+  }
+}
+.about__wrap {
+  padding: 50px;
+  @include mobile-5 {
+    padding: 50px 20px;
+  }
+  &-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    &-img {
+      width: 50%;
+      @include mobile-5 {
+        width: 100%;
+      }
+      position: relative;
+      &-bg {
+        width: 100%;
+        background: $color1;
+        height: 100%;
+        position: absolute;
+      }
+      &-image {
+        padding: 30px 30px 0 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &-text {
+      width: 47%;
+      @include mobile-5 {
+        padding: 20px 0;
+        width: 100%;
+      }
+      & svg {
+        color: $color2;
+        font-size: 50px;
+        padding-bottom: 10px;
+      }
+      & h1 {
+        font-size: 30px;
+        color: $color1;
+        padding-bottom: 10px;
+        @include mobile-4 {
+          font-size: 25px;
+        }
+      }
+      & p {
+        font-weight: 500;
+        padding-bottom: 20px;
+      }
+    }
+    &.diff {
+      flex-wrap: wrap-reverse;
+    }
+  }
+}
+.about__end {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+  @include mobile-6 {
+    padding: 50px 20px;
+  }
+  & div {
+    width: 22%;
+    text-align: center;
+    @include mobile-2 {
+      width: 48%;
+      padding-bottom: 50px;
+    }
+    @include mobile-4 {
+      width: 100%;
+    }
+    & h1 {
+      color: $color1;
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+    & p {
+      font-size: 14px;
+      color: #444;
+    }
+  }
+}

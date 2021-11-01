@@ -61,7 +61,7 @@ nav {
 }
 
 /*Stying for small screens*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   nav {
     position: fixed;
     z-index: 3;
@@ -128,8 +128,8 @@ nav {
 }
   @media screen and (min-height : 1024px){
      .nav-links.open {
-    clip-path: circle(1100px at 90% -10%);
-    -webkit-clip-path: circle(1100px at 90% -10%);
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
   }
   }
