@@ -78,6 +78,7 @@
 @media (max-width: 800px) {
   .major .major__wrap-main {
     width: 100%;
+    padding-top: 30px;
   }
 }
 

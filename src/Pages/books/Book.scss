@@ -40,6 +40,7 @@
       flex-wrap: wrap;
        @include mobile-2{
          width: 100%;
+         padding-top: 30px;
        }
       &-card {
         width: 32%;
