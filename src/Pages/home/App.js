@@ -8,6 +8,7 @@ import Wonderful from '../../Components/wonderful/wonderful'
 import Artist from '../../Components/Artist-of-the-month/Artist'
 import Topbooks from '../../Components/Topbooks/Topbooks'
 import Noted from '../../Components/Noted-authors/Noted'
+import Top from '../../Components/To-top/top'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Artist />
       <Topbooks />
       <Noted />
+      <Top />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import Navbar from '../../Components/navbar/Navbar'
+import Top from '../../Components/To-top/top'
 import { BsDropletFill } from 'react-icons/bs'
 import {FaSeedling} from 'react-icons/fa'
 import {GiBookCover} from 'react-icons/gi'
@@ -153,6 +154,7 @@ function About() {
           <p>SIMPLY RETURN WITHIN 30 DAYS</p>
         </div>
       </div>
+      <Top />
     </>
   )
 }

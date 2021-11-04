@@ -43,7 +43,7 @@ const Navbar = () => {
             <NavLink
               activeClassName='navbar__link--active'
               className='link'
-              to='/news'
+              to='/books'
             >
               Books
             </NavLink>
@@ -54,14 +54,14 @@ const Navbar = () => {
               className='link'
               to='/seminar'
             >
-              Authors
+              Events
             </NavLink>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
             <NavLink
               activeClassName='navbar__link--active'
               className='link'
-              to='/seminar'
+              to='/category'
             >
               Categories
             </NavLink>

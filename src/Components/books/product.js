@@ -48,7 +48,7 @@ function Product() {
             <h2>
               By{' '}
               <span>
-                <Link to={authorlink}>{author}</Link>
+                <Link to={`/${authorlink}`}>{author}</Link>
               </span>
             </h2>
             <h3>

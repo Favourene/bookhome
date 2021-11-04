@@ -1,0 +1,37 @@
+@import '../resources';
+
+.Authorside {
+  width: 100%;
+  background: #eff0f1;
+  border: 1px solid #00000060;
+  padding: 30px 20px;
+  @include mobile-2{
+   height: 400px;
+   overflow-y: auto;
+  }
+  & h1 {
+    font-size: 30px;
+    color: $color1;
+    padding-bottom: 30px;
+  }
+  & ul {
+    & a {
+      text-decoration: none;
+      & li {
+        list-style: none;
+        color: $color1;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #00000060;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        &:hover{
+         color: $color2;
+         border-bottom: 1px solid $color2;
+        }
+        & p {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.top {
+  position: fixed;
+  top: 90%;
+  width: 100%;
+  text-align: right;
+  padding: 0 20px;
+}
+
+.top a {
+  text-decoration: none;
+  color: #065a60;
+  padding: 10px;
+  border: 4px dotted #065a60;
+}
+/*# sourceMappingURL=top.css.map */

@@ -1,0 +1,88 @@
+@import '../resources';
+
+.auth-head {
+  padding: 100px 50px 20px 50px;
+  @include mobile-6{
+    padding: 100px 20px 20px 20px;
+  }
+  & h1 {
+    font-size: 40px;
+    color: $color1;
+  }
+}
+
+.authors {
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mobile-6 {
+    padding: 0px 20px;
+  }
+  & &__side {
+    width: 25%;
+    @include mobile-2 {
+      width: 100%;
+    }
+  }
+  & &__main {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: max-content;
+    @include mobile-2 {
+      width: 100%;
+      padding-top: 50px;
+    }
+    &-card {
+      width: 32%;
+      text-align: center;
+      @include mobile-2 {
+        padding-bottom: 50px;
+      }
+      @include mobile-6 {
+        width: 47%;
+      }
+      & img {
+        width: 100%;
+        height: 350px;
+        padding-bottom: 20px;
+        @include mobile-6 {
+          height: 400px;
+        }
+        @include mobile-4 {
+          height: 250px;
+        }
+      }
+      & a {
+        text-decoration: none;
+        & h2 {
+          font-size: 20px;
+          font-weight: 600;
+          padding-bottom: 10px;
+          color: #212f45;
+        }
+        & h3 {
+          color: $pcolor;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 100;
+          font-size: 13px;
+          padding-bottom: 5px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      & p {
+        padding: 20px 10px;
+        color: $color2;
+        & span {
+          color: $pcolor;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

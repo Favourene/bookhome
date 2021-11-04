@@ -1,0 +1,56 @@
+@import '../../resources';
+
+.category {
+  padding: 100px 50px;
+  @include mobile-6{
+   padding: 100px 20px;
+  }
+  & &__head {
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    & h1 {
+      font-size: 50px;
+      color: $color1;
+      padding-bottom: 10px;
+      @include mobile-3{
+     font-size: 30px;
+     }
+      & p {
+        color: $pcolor;
+      }
+    }
+  }
+  & &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-card{
+     width: 22%;
+     text-align:  center;
+     padding-bottom: 30px;
+     @include mobile-5{
+      width: 31%;
+     }
+     @include mobile-3{
+      width: 47%;
+     }
+      @include mobile-4{
+      width: 100%;
+     }
+     & a{
+      text-decoration: none;
+      color: $color1;
+      &:hover{
+       color: $color2;
+      }
+     }
+     &-img{
+      width: 100%;
+      & img{
+       width: 100%;
+      }
+     }
+    }
+  }
+}

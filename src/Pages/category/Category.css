@@ -1,0 +1,84 @@
+.category {
+  padding: 100px 50px;
+}
+
+@media (max-width: 1024px) {
+  .category {
+    padding: 100px 20px;
+  }
+}
+
+.category .category__head {
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.category .category__head h1 {
+  font-size: 50px;
+  color: #272640;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .category .category__head h1 {
+    font-size: 30px;
+  }
+}
+
+.category .category__head h1 p {
+  color: #555;
+}
+
+.category .category__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.category .category__wrap-card {
+  width: 22%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+  .category .category__wrap-card {
+    width: 31%;
+  }
+}
+
+@media (max-width: 600px) {
+  .category .category__wrap-card {
+    width: 47%;
+  }
+}
+
+@media (max-width: 500px) {
+  .category .category__wrap-card {
+    width: 100%;
+  }
+}
+
+.category .category__wrap-card a {
+  text-decoration: none;
+  color: #272640;
+}
+
+.category .category__wrap-card a:hover {
+  color: #065a60;
+}
+
+.category .category__wrap-card-img {
+  width: 100%;
+}
+
+.category .category__wrap-card-img img {
+  width: 100%;
+}
+/*# sourceMappingURL=Category.css.map */

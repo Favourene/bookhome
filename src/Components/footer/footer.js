@@ -21,13 +21,13 @@ function footer() {
                 <NavLink to='/about'>About</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Books</NavLink>
+                <NavLink to='/books'>Books</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Authors</NavLink>
+                <NavLink to='/'>Events</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Categories</NavLink>
+                <NavLink to='/category'>Categories</NavLink>
               </li>
               <li>
                 <NavLink to='/'>Contact Us</NavLink>
@@ -37,22 +37,23 @@ function footer() {
           <div className='footer__wrap-list'>
             <ul>
               <li>
-                <NavLink to='/'>Best Sellers</NavLink>
+                <NavLink to='/adventure'>Adventure</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Biography</NavLink>
+                <NavLink to='/art'>Art</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Children</NavLink>
+                <NavLink to='/biography'>Biography</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Fiction</NavLink>
+                <NavLink to='/children-book'>Children</NavLink>
+              </li>
+
+              <li>
+                <NavLink to='/mystery'>Mystery</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Mystery</NavLink>
-              </li>
-              <li>
-                <NavLink to='/'>Political</NavLink>
+                <NavLink to='/science'>Science</NavLink>
               </li>
             </ul>
           </div>
@@ -67,7 +68,7 @@ function footer() {
               <b>&copy;</b> Copyright .{' '}
               <span>
                 <a href='https://www.iwinosa.me/'>
-                  <span className="me">Osasdev</span>
+                  <span className='me'>Osasdev</span>
                 </a>
               </span>{' '}
               . 2021

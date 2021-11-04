@@ -9,12 +9,6 @@ const Data = [
     OldPrice: '$21.0',
     AuthorLink: 'danielle-steel',
     Links: 'Spy:-A-Novel',
-    Publisher: 'Ballantine Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 264,
-    Year: 2007,
-    Language: 'English',
   },
   {
     id: 2,
@@ -26,12 +20,6 @@ const Data = [
     OldPrice: '$21.0',
     AuthorLink: 'danielle-steel',
     Links: 'Lost-and-Found:-A-Novel',
-    Publisher: 'Ballantine Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 350,
-    Year: 2019,
-    Language: 'English',
   },
   {
     id: 3,
@@ -42,12 +30,6 @@ const Data = [
     Price: '20.00',
     AuthorLink: 'danielle-steel',
     Links: 'Blessing-in-Disguise:-A-Novel',
-    Publisher: 'Ballantine Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 256,
-    Year: 1994,
-    Language: 'English',
   },
   {
     id: 4,
@@ -59,12 +41,6 @@ const Data = [
     OldPrice : '$34.67',
     AuthorLink: 'danielle-steel',
     Links: 'Silent-Night:-A-Novel',
-    Publisher: 'Ballantine Books',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
-    Pages: 270,
-    Year: 2019,
-    Language: 'English',
   },
 ]
 

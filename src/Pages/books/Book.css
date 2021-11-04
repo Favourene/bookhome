@@ -1,0 +1,147 @@
+.major {
+  padding: 100px 50px;
+}
+
+@media (max-width: 1024px) {
+  .major {
+    padding: 100px 20px;
+  }
+}
+
+.major .major__head {
+  padding: 30px 0;
+}
+
+.major .major__head h1 {
+  font-size: 40px;
+  color: #272640;
+}
+
+.major .major__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.major .major__wrap-sidebar {
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+  .major .major__wrap-sidebar {
+    width: 100%;
+  }
+}
+
+.major .major__wrap-sidebar input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  background: #eff0f1;
+  border: 1px solid #00000060;
+  margin-bottom: 30px;
+}
+
+.major .major__wrap-sidebar input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.major .major__wrap-sidebar input:-ms-input-placeholder {
+  color: #000;
+}
+
+.major .major__wrap-sidebar input::-ms-input-placeholder {
+  color: #000;
+}
+
+.major .major__wrap-sidebar input::placeholder {
+  color: #000;
+}
+
+.major .major__wrap-main {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .major .major__wrap-main {
+    width: 100%;
+  }
+}
+
+.major .major__wrap-main-card {
+  width: 32%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .major .major__wrap-main-card {
+    width: 47%;
+  }
+}
+
+.major .major__wrap-main-card img {
+  width: 100%;
+  height: 350px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .major .major__wrap-main-card img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .major .major__wrap-main-card img {
+    height: 250px;
+  }
+}
+
+.major .major__wrap-main-card a {
+  text-decoration: none;
+}
+
+.major .major__wrap-main-card a h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #212f45;
+}
+
+.major .major__wrap-main-card a h3 {
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.major .major__wrap-main-card a h3:hover {
+  text-decoration: underline;
+}
+
+.major .major__wrap-main-card p {
+  padding: 20px 10px;
+  color: #065a60;
+}
+
+.major .major__wrap-main-card p span {
+  color: #555;
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=Book.css.map */

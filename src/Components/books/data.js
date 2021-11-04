@@ -118,11 +118,11 @@ const Data = [
     id: 8,
     Image:
       'https://res.cloudinary.com/osaz/image/upload/v1635029842/Book%20Home/Books/Best%20Selling/Invisible-Man-Ellison-Ralph-9780141184425_qkmafn.jpg',
-    Title: 'Invicible Man',
+    Title: 'Invisible Man',
     Author: 'Elison Ralph',
     Price: '24.65',
     AuthorLink: 'elison-ralph',
-    Links: 'Invicible-Man',
+    Links: 'Invisible-Man',
     Publisher: 'Modern Library',
     Description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',

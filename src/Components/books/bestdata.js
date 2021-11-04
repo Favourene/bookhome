@@ -7,7 +7,7 @@ const Best = [
     Author: 'stephen hawking',
     Price: '21.55',
     OldPrice: '$25.0',
-    AuthorLink: 'jhcdhchuc',
+    AuthorLink: 'stephen-hawking',
     Links: 'A-Brief-History-of-Time',
   },
   {
@@ -76,11 +76,11 @@ const Best = [
     id: 8,
     Image:
       'https://res.cloudinary.com/osaz/image/upload/v1635029842/Book%20Home/Books/Best%20Selling/Invisible-Man-Ellison-Ralph-9780141184425_qkmafn.jpg',
-    Title: 'Invicible Man',
+    Title: 'Invisible Man',
     Author: 'Elison Ralph',
     Price: '24.65',
     AuthorLink: 'elison-ralph',
-    Links: 'Invicible-Man',
+    Links: 'Invisible-Man',
   },
   {
     id: 9,

@@ -1,0 +1,14 @@
+@import '../../resources';
+.top {
+  position: fixed;
+  top: 90%;
+  width: 100% ;
+  text-align: right;
+  padding: 0 20px;
+  & a {
+    text-decoration: none;
+    color: $color2;
+    padding: 10px;
+    border: 4px dotted $color2;
+  }
+}
