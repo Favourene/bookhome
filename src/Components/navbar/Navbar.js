@@ -52,7 +52,7 @@ const Navbar = () => {
             <NavLink
               activeClassName='navbar__link--active'
               className='link'
-              to='/seminar'
+              to='/events'
             >
               Events
             </NavLink>
@@ -79,7 +79,7 @@ const Navbar = () => {
             <NavLink
               activeClassName='navbar__link--active'
               className='link'
-              to='/contact'
+              to='/'
             >
               <BsBag />
               <span>0</span>

@@ -17,6 +17,9 @@ class Book extends Component {
     for (let i = 65; i < 91; i++) {}
     return result
   }
+  componentDidMount() {
+    document.title = `Book Library - Book Home`
+  }
   elementContainsSearchString = (searchInput, element) =>
     searchInput
       ? element.Title.toLowerCase().includes(searchInput.toLowerCase())

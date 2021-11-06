@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './About.css'
 import Navbar from '../../Components/navbar/Navbar'
 import Top from '../../Components/To-top/top'
@@ -7,6 +7,9 @@ import {FaSeedling} from 'react-icons/fa'
 import {GiBookCover} from 'react-icons/gi'
 
 function About() {
+  useEffect(() => {
+   document.title = 'About Book Home'
+  })
   return (
     <>
       <Navbar />

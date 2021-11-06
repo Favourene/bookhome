@@ -24,13 +24,13 @@ function footer() {
                 <NavLink to='/books'>Books</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Events</NavLink>
+                <NavLink to='/events'>Events</NavLink>
               </li>
               <li>
                 <NavLink to='/category'>Categories</NavLink>
               </li>
               <li>
-                <NavLink to='/'>Contact Us</NavLink>
+                <NavLink to='/contact'>Contact Us</NavLink>
               </li>
             </ul>
           </div>

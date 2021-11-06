@@ -49,6 +49,10 @@ import Science from './Components/Category/Science/Science';
 import Kids from './Components/Category/Children/Kids';
 import Art from './Components/Category/Art/Art';
 import Mystery from './Components/Category/Mystery/Mystery';
+import Events from './Pages/Events/Events';
+import Eventdet from './Components/Events/Events-details'
+import Contact from './Pages/Contact/Contact';
+import Errorss from './Pages/Error/Errorss'
 
 
 
@@ -57,18 +61,12 @@ ReactDOM.render(
   <Router>
     <Scroll />
     <Switch>
-      <Route exact path='/'>
-        <App />
-      </Route>
-      <Route exact path='/about'>
-        <About />
-      </Route>
-      <Route exact path='/books'>
-        <Book />
-      </Route>
-      <Route exact path='/category'>
-        <Category />
-      </Route>
+      <Route exact path='/' component={App} />
+      <Route exact path='/about' component={About} />
+      <Route exact path='/books' component={Book} />
+      <Route exact path='/category' component={Category} />
+      <Route exact path='/events' component={Events} />
+      <Route exact path='/contact' component={Contact} />
       <Route path='/danielle-steel' component={Danielle} />
       <Route path='/stephen-hawking' component={Hawking} />
       <Route path='/anne-frank' component={Anne} />
@@ -110,6 +108,8 @@ ReactDOM.render(
       <Route path='/art' component={Art} />
       <Route path='/mystery' component={Mystery} />
       <Route exact path='/books/:Links' children={<Product />}></Route>
+      <Route exact path='/events/:Links' children={<Eventdet />}></Route>
+      <Route exact path="*" component={Errorss}/>
     </Switch>
     <Footer />
   </Router>,

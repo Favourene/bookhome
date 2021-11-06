@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import Authorside from '../Authorside'
 import Data from './Data'
 import '../general.css'
 
-
 const para = Data.length
 function Danielle() {
+  useEffect(() => {
+    document.title = 'Authors - Book Home'
+  })
   return (
     <div>
       <Navbar />

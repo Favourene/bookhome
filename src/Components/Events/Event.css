@@ -1,0 +1,77 @@
+.Event-details {
+  padding: 100px 30px;
+}
+
+.Event-details .Event-details-hero {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.Event-details .Event-details-hero-img {
+  width: 100%;
+  height: 100%;
+}
+
+.Event-details .Event-details-text h1 {
+  font-size: 40px;
+  color: #272640;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .Event-details .Event-details-text h1 {
+    font-size: 30px;
+  }
+}
+
+.Event-details .Event-details-text p {
+  line-height: 27px;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+  color: #555;
+}
+
+.Event-details .Event-details-text-details {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Event-details .Event-details-text-details-card {
+  width: 30%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .Event-details .Event-details-text-details-card {
+    width: 50%;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .Event-details .Event-details-text-details-card {
+    width: 100%;
+  }
+}
+
+.Event-details .Event-details-text-details-card-i {
+  padding-bottom: 20px;
+}
+
+.Event-details .Event-details-text-details-card-i svg {
+  color: #065a60;
+  font-size: 40px;
+}
+
+.Event-details .Event-details-text-details-card h2 {
+  color: #272640;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=Event.css.map */

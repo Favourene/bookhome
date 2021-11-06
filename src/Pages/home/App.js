@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import Swiper from '../../Components/swiper/swipers'
 import Display from '../../Components/books/display'
@@ -11,6 +11,9 @@ import Noted from '../../Components/Noted-authors/Noted'
 import Top from '../../Components/To-top/top'
 
 function App() {
+   useEffect(() => {
+     document.title = 'Book-Home Homepage'
+   })
   return (
     <div className='App'>
       <Navbar />

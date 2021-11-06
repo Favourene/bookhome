@@ -10,8 +10,7 @@ const Data = [
     AuthorLink: 'stephen-hawking',
     Links: 'A-Brief-History-of-Time',
     Publisher: 'Bantam',
-    Description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?',
+    Description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis consectetur culpa facilis aliquid fugit nihil libero laborum repudiandae voluptates? Placeat vel deleniti in praesentium obcaecati ex impedit voluptas mollitia?`,
     Pages: 212,
     Year: 1998,
     Language: 'English',
