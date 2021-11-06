@@ -28,8 +28,7 @@ export default function App() {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          pagination={{
-          }}
+          pagination={{}}
           effect={'fade'}
           className='mySwiper'
         >
@@ -43,9 +42,14 @@ export default function App() {
           <SwiperSlide className='main2'>
             <div className='slide'>
               <p>COME AND JOIN THE READING CLUB</p>
-              <h1>
-                Ebooks, The Easier way.
-              </h1>
+              <h1>Ebooks, The Easier way.</h1>
+              <button>SEE MORE</button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className='main3'>
+            <div className='slide'>
+              <p>COME AND JOIN THE READING CLUB</p>
+              <h1>We are all it takes to acquire the Right Knowledge.</h1>
               <button>SEE MORE</button>
             </div>
           </SwiperSlide>

@@ -76,10 +76,11 @@
 }
 
 .mySwiper .main2 {
-  background: url("https://res.cloudinary.com/osaz/image/upload/v1634744465/Book%20Home/home-2-slider-2_dahki1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000007c), to(#0000007c)), url("https://res.cloudinary.com/osaz/image/upload/v1636067071/Book%20Home/Events/15tmag-books-slide-30AY-superJumbo_uhvohs.jpg");
+  background: linear-gradient(#0000007c, #0000007c), url("https://res.cloudinary.com/osaz/image/upload/v1636067071/Book%20Home/Events/15tmag-books-slide-30AY-superJumbo_uhvohs.jpg");
   background-size: cover;
   background-position: center;
-  color: #272640;
+  color: #fff;
 }
 
 .mySwiper .main2 .slide {
@@ -94,7 +95,6 @@
 
 .mySwiper .main2 .slide p {
   font-size: 18px;
-  color: #065a60;
 }
 
 .mySwiper .main2 .slide h1 {
@@ -125,6 +125,60 @@
 }
 
 .mySwiper .main2 .slide button:hover {
+  background: #065a60;
+  cursor: pointer;
+}
+
+.mySwiper .main3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000007c), to(#0000007c)), url("https://res.cloudinary.com/osaz/image/upload/v1636067074/Book%20Home/Events/15tmag-books-slide-BZPC-superJumbo_uzyokh.jpg");
+  background: linear-gradient(#0000007c, #0000007c), url("https://res.cloudinary.com/osaz/image/upload/v1636067074/Book%20Home/Events/15tmag-books-slide-BZPC-superJumbo_uzyokh.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.mySwiper .main3 .slide {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .mySwiper .main3 .slide {
+    width: 90%;
+  }
+}
+
+.mySwiper .main3 .slide p {
+  font-size: 18px;
+}
+
+.mySwiper .main3 .slide h1 {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .mySwiper .main3 .slide h1 {
+    font-size: 40px;
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .mySwiper .main3 .slide h1 {
+    font-size: 30px;
+  }
+}
+
+.mySwiper .main3 .slide button {
+  padding: 15px 50px;
+  border: none;
+  font-size: 16px;
+  background: #272640;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mySwiper .main3 .slide button:hover {
   background: #065a60;
   cursor: pointer;
 }
