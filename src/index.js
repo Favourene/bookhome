@@ -53,6 +53,8 @@ import Events from './Pages/Events/Events';
 import Eventdet from './Components/Events/Events-details'
 import Contact from './Pages/Contact/Contact';
 import Errorss from './Pages/Error/Errorss'
+import Cart from './Pages/Cart/Cart';
+import Checkout from './Pages/Checkout/Checkout';
 
 
 
@@ -109,7 +111,9 @@ ReactDOM.render(
       <Route path='/mystery' component={Mystery} />
       <Route exact path='/books/:Links' children={<Product />}></Route>
       <Route exact path='/events/:Links' children={<Eventdet />}></Route>
-      <Route exact path="*" component={Errorss}/>
+      <Route exact path='/cart' children={<Cart />}></Route>
+      <Route exact path='/checkout' children={<Checkout />}></Route>
+      <Route exact path='*' component={Errorss} />
     </Switch>
     <Footer />
   </Router>,

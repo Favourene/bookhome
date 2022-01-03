@@ -1,16 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import Data from './Data'
 import './Events.css'
+import { commerce } from '../../lib/commerce.js'
 
 function Events() {
+  const [cart, setCart] = useState({})
+  const fetchCart = async () => {
+    const data = await commerce.cart.retrieve()
+    return data
+  }
   useEffect(() => {
+    const miracle = async () => {
+      fetchCart().then((data) => {
+        setCart(data)
+      })
+    }
+    miracle()
     document.title = 'Events - Book Home'
-  })
+  }, [])
   return (
     <>
-      <Navbar />
+      <Navbar totalItems={cart.total_items} />
       <section className='events'>
         <div className='events__head'>
           <h1>Events</h1>

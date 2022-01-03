@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { BsBag } from 'react-icons/bs';
+import { BsBag } from 'react-icons/bs'
 import Logo from './logo.png'
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({totalItems}) => {
   const [isActive, setActive] = useState('false')
   const handleToggle = () => {
     setActive(!isActive)
@@ -79,10 +79,10 @@ const Navbar = () => {
             <NavLink
               activeClassName='navbar__link--active'
               className='link'
-              to='/'
+              to='/cart'
             >
               <BsBag />
-              <span>0</span>
+              <span>{totalItems}</span>
             </NavLink>
           </li>
         </ul>

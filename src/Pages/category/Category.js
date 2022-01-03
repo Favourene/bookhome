@@ -1,16 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Category.css'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import Data from './Data'
+import { commerce } from '../../lib/commerce.js'
 
 function Category() {
-  useEffect(() => {
-    document.title = 'Category - Book Home'
-  })
+   const [cart, setCart] = useState({})
+   const fetchCart = async () => {
+     const data = await commerce.cart.retrieve()
+     return data
+   }
+   useEffect(() => {
+     const miracle = async () => {
+       fetchCart().then((data) => {
+         setCart(data)
+       })
+     }
+     miracle()
+     document.title = 'Category - Book Home'
+   }, [])
   return (
     <div>
-      <Navbar />
+      <Navbar totalItems={cart.total_items} />
       <section className='category'>
         <div className='category__head'>
           <h1>Shop By Category</h1>

@@ -1,27 +1,45 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { commerce } from '../../lib/commerce'
 import { Link } from 'react-router-dom'
-import Sale from './saledata'
 import './book.css'
 
-function latest() {
+function Discount() {
+  const [product, setProduct] = useState([])
+  const fetchProduct = async () => {
+    const { data } = await commerce.products.list({
+      category_slug: ['discount'],
+    })
+
+    setProduct(data)
+  }
+  useEffect(() => {
+    fetchProduct()
+  }, [])
   return (
     <div className='book__wrap'>
-      {Sale.map((best) => {
+      
+      {product.map((best) => {
         return (
           <div key={best.id} className='book__wrap-card'>
             <div className='book__wrap-card-img'>
-              <Link to={`/books/${best.Links}`}>
-                <img src={best.Image} alt='' />
+              <Link to={`/books/${best.attributes[5].value}`}>
+                <img src={best.image.url} alt='' />
               </Link>
             </div>
-            <Link className='book__wrap-card-h1' to={`/books/${best.Links}`}>
-              <h1>{best.Title}</h1>
+            <Link
+              className='book__wrap-card-h1'
+              to={`/books/${best.attributes[5].value}`}
+            >
+              <h1>{best.name}</h1>
             </Link>
-            <Link className='book__wrap-card-p' to={`/${best.AuthorLink}`}>
-              <p>{best.Author}</p>
+            <Link
+              className='book__wrap-card-p'
+              to={`/${best.attributes[4].value}`}
+            >
+              <p>{best.attributes[7].value}</p>
             </Link>
             <p className='book__wrap-card-price'>
-              <span>{best.OldPrice}</span> ${best.Price}
+              <span>{best.attributes[6].value}</span> ${best.price.formatted}
             </p>
           </div>
         )
@@ -30,4 +48,4 @@ function latest() {
   )
 }
 
-export default latest
+export default Discount

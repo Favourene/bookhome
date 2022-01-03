@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { commerce } from '../../lib/commerce'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Link } from 'react-router-dom'
-import Data from './childrendata'
 import './children.css'
 import 'swiper/swiper-bundle.css'
 
-function children() {
+function Children() {
+   const [product, setProduct] = useState([])
+   const fetchProduct = async () => {
+     const { data } = await commerce.products.list({
+       category_slug: ['children'],
+     })
+
+     setProduct(data)
+   }
+   useEffect(() => {
+     fetchProduct()
+   }, [])
   return (
     <div className='children'>
       <div className='children__head'>
@@ -28,25 +39,26 @@ function children() {
         }}
         pagination={{}}
       >
-        {Data.map((child) => {
+        {product.map((child) => {
           return (
             <SwiperSlide key={child.id} className='children__swiper-slide'>
               <div className='children__swiper-card'>
                 <Link
-                  to={`/books/${child.Links}`}
+                  to={`/books/${child.attributes[5].value}`}
                   className='children__swiper-card-img'
                 >
-                  <img src={child.Image} alt='' />
+                  <img src={child.image.url} alt='' />
                 </Link>
                 <div className='children__swiper-card-text'>
-                  <Link to={child.AuthorLink}>
-                    <p>{child.Author}</p>
+                  <Link to={child.attributes[4].value}>
+                    <p>{child.attributes[7].value}</p>
                   </Link>
-                  <Link to={`/books/${child.Links}`}>
-                    <h1>{child.Title}</h1>
+                  <Link to={`/books/${child.attributes[5].value}`}>
+                    <h1>{child.name}</h1>
                   </Link>
                   <p>
-                    ${child.Price} <span>{child.OldPrice}</span>
+                    ${child.price.formatted}{' '}
+                    <span>{child.price.formatted}</span>
                   </p>
                 </div>
               </div>
@@ -58,4 +70,4 @@ function children() {
   )
 }
 
-export default children
+export default Children

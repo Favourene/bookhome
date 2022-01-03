@@ -1,15 +1,27 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import './Error.css'
+import { commerce } from '../../lib/commerce.js'
 
 function Error() {
-  useEffect(() => {
-    document.title = 'Error 404 - Book Home'
-  })
+   const [cart, setCart] = useState({})
+   const fetchCart = async () => {
+     const data = await commerce.cart.retrieve()
+     return data
+   }
+   useEffect(() => {
+     const miracle = async () => {
+       fetchCart().then((data) => {
+         setCart(data)
+       })
+     }
+     miracle()
+     document.title = 'Error 404 - Book Home'
+   }, [])
   return (
     <>
-      <Navbar />
+      <Navbar totalItems={cart.total_items} />
       <div className='error'>
         <div className='error-container'>
           <h1>oops!</h1>

@@ -5,10 +5,12 @@
   width: 100% ;
   text-align: right;
   padding: 0 20px;
-  & a {
+  & button {
     text-decoration: none;
     color: $color2;
     padding: 10px;
     border: 4px dotted $color2;
+    background: none;
+    cursor: pointer;
   }
 }

@@ -60,6 +60,7 @@
 .product .product__right-wrap h2 span > a {
   color: #065a60;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .product .product__right-wrap h3 {

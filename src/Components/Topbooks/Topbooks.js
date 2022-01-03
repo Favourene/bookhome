@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { commerce } from '../../lib/commerce'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.css'
 import './Topbooks.css'
-import Data from './Topdata'
+
 
 // import Swiper core and required modules
 import SwiperCore, { Autoplay } from 'swiper'
@@ -11,6 +12,18 @@ import SwiperCore, { Autoplay } from 'swiper'
 SwiperCore.use([Autoplay])
 
 function Topbooks() {
+  const [product, setProduct] = useState([])
+  const fetchProduct = async () => {
+    const { data } = await commerce.products.list({
+      category_slug: ['popular'],
+    })
+
+    setProduct(data)
+  }
+  useEffect(() => {
+    fetchProduct()
+  }, [])
+
   return (
     <div className='topbook'>
       <div className='topbook__head'>
@@ -41,20 +54,22 @@ function Topbooks() {
           }}
           className='topbook__wrap-swip'
         >
-          {Data.map((topbook) => {
+          {product.map((topbook) => {
             return (
               <SwiperSlide key={topbook.id} className='topbook__wrap-swip-card'>
-                <Link to={`/books/${topbook.Links}`}>
-                  <img src={topbook.Image} alt='' />
+                <Link to={`/books/${topbook.attributes[5].value}`}>
+                  <img src={topbook.image.url} alt='' />
                 </Link>
                 <div>
-                  <Link to={`/books/${topbook.Links}`}>
-                    <h1>{topbook.Title}</h1>
+                  <Link to={`/books/${topbook.attributes[5].value}`}>
+                    <h1>{topbook.name}</h1>
                   </Link>
                   <p>
                     by{' '}
                     <span>
-                      <Link to={topbook.AuthorLink}>{topbook.Author}</Link>
+                      <Link to={topbook.attributes[4].value}>
+                        {topbook.attributes[7].value}
+                      </Link>
                     </span>
                   </p>
                 </div>

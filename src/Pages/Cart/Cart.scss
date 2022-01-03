@@ -1,0 +1,133 @@
+@import '../../resources';
+
+.cartPage {
+  .cart-hero {
+    background-image: linear-gradient(#0000004f, #0000004f),
+      url('https://res.cloudinary.com/osaz/image/upload/v1636067108/Book%20Home/Events/toa-heftiba-462478-unsplash_kbpils.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    @include mobile-3 {
+      padding: 0 20px;
+      font-size: 30px;
+      text-align: right;
+    }
+  }
+  .cart-wrap {
+    padding: 50px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    @include mobile-5 {
+      padding: 50px 0px;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #14213d;
+    }
+    &::-webkit-scrollbar-thumb {
+      box-shadow: inset 0 0 6px #272640;
+      background: #272640;
+    }
+    .cart-table {
+      width: 100%;
+      & thead {
+        background: #272640;
+        & tr th {
+          padding: 10px;
+          color: #fff;
+        }
+      }
+     
+      & tbody tr td {
+        padding: 20px 10px;
+        border-bottom: 1px solid #14213d;
+        text-align: center;
+        min-height: 85px;
+        @include mobile-2 {
+          min-width: 40vw;
+        }
+        & .delete {
+          color: red;
+          font-size: 25px;
+          cursor: pointer;
+          border: none;
+          background: none;
+        }
+        & img {
+          width: 80px;
+        }
+        & input {
+          width: 100px;
+          border: 1px solid #272640;
+          padding: 10px;
+          text-align: center;
+        }
+        & .qty {
+          font-size: 15px;
+          padding: 6px 0;
+        }
+        & .qty-btn {
+          & button {
+            padding: 0px 5px;
+            font-size: 20px;
+            font-weight: bold;
+            background: #272640;
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+     & .empty{
+        padding: 20px 0;
+        font-size: 25px;
+        color: #14213d;
+      }
+  }
+  .cart-check {
+    padding: 50px;
+    @include mobile-5 {
+      padding: 50px 0px;
+    }
+    & .cart-check-head {
+      padding: 10px 20px;
+      background: #272640;
+      color: #fff;
+    }
+    & .cart-wrapper {
+      padding-top: 20px;
+      padding-right: 50px;
+      display: flex;
+      justify-content: space-between;
+      @include mobile-5 {
+        padding: 0 20px;
+      }
+      & h3 {
+        font-weight: 600px;
+        color: #555;
+      }
+      & h2 {
+        color: #14213d;
+        text-align: right;
+        padding-bottom: 30px;
+      }
+      & button {
+        padding: 10px 20px;
+        background: #14213d;
+        font-weight: bold;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}

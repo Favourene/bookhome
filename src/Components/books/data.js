@@ -14,6 +14,16 @@ const Data = [
     Pages: 212,
     Year: 1998,
     Language: 'English',
+    Test: [
+      {
+        id: 1,
+        Fresh: 'What a test',
+      },
+      {
+        id: 2,
+        Fresh: 'What a testss',
+      },
+    ],
   },
   {
     id: 2,
@@ -284,8 +294,8 @@ const Data = [
       'https://res.cloudinary.com/osaz/image/upload/v1635064745/Book%20Home/Books/Latest%20Books/The-Diary-of-a-Young-Girl-by-Anne-Frank-300x456_ifate1.jpg',
     Title: 'The Diary of a Young Girl',
     Author: 'ANNE FRANK',
-    Price: '$18.00',
-    OldPrice: '20.00',
+    Price: '18.00',
+    OldPrice: '$20.00',
     AuthorLink: 'anne-frank',
     Links: 'The-Diary-of-a-Young-Girl',
     Publisher: 'Bantam',
