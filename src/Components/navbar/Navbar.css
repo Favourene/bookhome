@@ -99,6 +99,25 @@ nav {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
   }
+  .hamburgers {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 15%;
+    top: 50%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    z-index: 2;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+  .hamburgers a {
+    text-decoration: none;
+    color: #272640;
+  }
+  .hamburgers a svg {
+    font-size: 25px;
+  }
   .nav-links {
     position: fixed;
     background: #fff;
@@ -121,6 +140,9 @@ nav {
   }
   .nav-links li {
     opacity: 0;
+  }
+  .nav-links li.bag {
+    display: none;
   }
   .nav-links li:nth-child(1) {
     -webkit-transition: all 0.5s ease 0.2s;
@@ -174,6 +196,9 @@ nav {
   }
   .logo {
     width: 200px;
+  }
+  .hamburgers {
+    right: 20%;
   }
 }
 

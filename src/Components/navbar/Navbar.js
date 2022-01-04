@@ -16,6 +16,16 @@ const Navbar = ({totalItems}) => {
         <div className='logo'>
           <img className='logo1' src={Logo} alt='Logo' />
         </div>
+        <div className='hamburgers'>
+          <NavLink
+            activeClassName='navbar__link--active'
+            className='link'
+            to='/cart'
+          >
+            <BsBag />
+            <span>{totalItems}</span>
+          </NavLink>
+        </div>
         <div
           onClick={handleToggle}
           className={isActive ? 'hamburger' : 'hamburger toggle'}
@@ -75,10 +85,10 @@ const Navbar = ({totalItems}) => {
               Contact Us
             </NavLink>
           </li>
-          <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
+          <li onClick={handleToggle} className='bag'>
             <NavLink
               activeClassName='navbar__link--active'
-              className='link'
+              className='link '
               to='/cart'
             >
               <BsBag />

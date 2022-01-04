@@ -44,7 +44,7 @@ nav {
   position: relative;
   padding: 0 10px;
 }
-.nav-links li a svg{
+.nav-links li a svg {
   font-size: 25px;
 }
 
@@ -62,6 +62,7 @@ nav {
 
 /*Stying for small screens*/
 @media screen and (max-width: 1024px) {
+  
   nav {
     position: fixed;
     z-index: 3;
@@ -75,6 +76,23 @@ nav {
     transform: translate(-5%, -50%);
     z-index: 2;
     transition: all 0.7s ease;
+  }
+  .hamburgers {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 15%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+    & a {
+      text-decoration: none;
+      color: #272640;
+      & svg {
+        font-size: 25px;
+      }
+    }
   }
   .nav-links {
     position: fixed;
@@ -95,6 +113,9 @@ nav {
 
   .nav-links li {
     opacity: 0;
+    &.bag{
+    display: none;
+  }
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -126,13 +147,13 @@ nav {
     margin: 0;
   }
 }
-  @media screen and (min-height : 1024px){
-     .nav-links.open {
+@media screen and (min-height: 1024px) {
+  .nav-links.open {
     clip-path: circle(1500px at 90% -10%);
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
   }
-  }
+}
 @media screen and (max-width: 500px) {
   nav {
     height: 4rem;
@@ -140,6 +161,9 @@ nav {
   .logo {
     width: 200px;
   }
+   .hamburgers {
+    right: 20%;
+   }
 }
 /*Animating Hamburger Icon on Click*/
 .toggle .line1 {
