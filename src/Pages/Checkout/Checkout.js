@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import { commerce } from '../../lib/commerce'
+import Loading from '../../Components/Loading/Loading'
 import './Checkout.css'
 
 function Checkout() {
@@ -26,9 +27,11 @@ function Checkout() {
     document.title = 'Check Out - Book Home'
   }, [])
   return (
+    loading?
+    <Loading/>
+    :
     <>
       <Navbar />
-      {!loading && (
         <form className='checkOut'>
           <div className='checkOut-billings'>
             <h1>Billing Details</h1>
@@ -144,7 +147,6 @@ function Checkout() {
             </Link>
           </div>
         </form>
-      )}
     </>
   )
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import { AiFillDelete } from 'react-icons/ai'
 import { commerce } from '../../lib/commerce.js'
+import Loading from '../../Components/Loading/Loading'
 import './Cart.css'
 
 function Cart() {
@@ -33,9 +34,11 @@ function Cart() {
   }, [])
 
   return (
+    loading?
+    <Loading/> 
+    :
     <>
       <Navbar totalItems={cart.total_items} />
-      {!loading && (
         <section className='cartPage'>
           <section className='cart-hero'>
             <h1>Cart</h1>
@@ -126,7 +129,6 @@ function Cart() {
             </div>
           </section>
         </section>
-      )}
     </>
   )
 }

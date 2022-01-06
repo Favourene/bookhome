@@ -5,12 +5,14 @@ import Navbar from '../../Components/navbar/Navbar'
 import './Book.css'
 import Authorside from '../../Authors/Authorside'
 import Top from '../../Components/To-top/top'
+import Loading from '../../Components/Loading/Loading'
 
 function Book() {
   const [product, setProduct] = useState([])
   const [cart, setCart] = useState({})
   const [searchBook, setSearchBook] = useState('')
   const [filteredResults, setFilteredResults] = useState([])
+  const [loading, setLoading] = useState(true)
   const fetchProduct = async () => {
     const { data } = await commerce.products.list({ limit: 100 })
     setProduct(data)
@@ -38,6 +40,7 @@ function Book() {
     const miracle = async () => {
       fetchCart().then((data) => {
         setCart(data)
+        setLoading(false)
       })
     }
     miracle()
@@ -46,6 +49,9 @@ function Book() {
   }, [])
   const para = product.length
   return (
+    loading?
+    <Loading/>
+    :
     <>
       <Navbar totalItems={cart.total_items} />
       <section className='major'>

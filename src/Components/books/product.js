@@ -4,21 +4,23 @@ import { Link } from 'react-router-dom'
 import Navbar from '../navbar/Navbar'
 import './product.css'
 import { commerce } from '../../lib/commerce.js'
+import Loading from '../Loading/Loading'
 
 function Product() {
+  const [loading, setLoading] = useState(true)
   const { Links } = useParams()
   const [id, setId] = useState()
-  const [image, setImage] = useState('default')
-  const [title, setTitle] = useState('default')
-  const [author, setAuthor] = useState('default')
-  const [authorlink, setAuthorlink] = useState('default')
-  const [price, setPrice] = useState('default')
-  const [oldprice, setOldprice] = useState('default')
-  const [publisher, setPublisher] = useState('default')
-  const [pages, setPages] = useState('default')
-  const [year, setYear] = useState('default')
-  const [language, setLanguage] = useState('default')
-  const [description, setDescription] = useState('default')
+  const [image, setImage] = useState('')
+  const [title, setTitle] = useState('')
+  const [author, setAuthor] = useState('')
+  const [authorlink, setAuthorlink] = useState('')
+  const [price, setPrice] = useState('')
+  const [oldprice, setOldprice] = useState('')
+  const [publisher, setPublisher] = useState('')
+  const [pages, setPages] = useState('')
+  const [year, setYear] = useState('')
+  const [language, setLanguage] = useState('')
+  const [description, setDescription] = useState('')
 
   const [cart, setCart] = useState({})
 
@@ -40,8 +42,10 @@ function Product() {
   useEffect(() => {
     const ivie = async () => {
       fetchProduct().then((product) => {
+        setLoading(false)
         const newProduct = product.find(
           (product) => product.attributes[5].value === Links
+          
         )
         setImage(newProduct.image.url)
         setTitle(newProduct.name)
@@ -55,17 +59,22 @@ function Product() {
         setLanguage(newProduct.attributes[0].value)
         setDescription(newProduct.description)
         setId(newProduct.id)
+
       })
     }
     const miracle = async () => {
       fetchCart().then((data) => {
         setCart(data)
+        console.log(data)
+        setLoading(false)
       })
     }
     ivie()
     miracle()
-  })
-  return (
+  }, [Links])
+  return loading ? (
+    <Loading />
+  ) : (
     <>
       <Navbar totalItems={cart.total_items} />
       <div className='product'>
