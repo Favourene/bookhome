@@ -26,7 +26,7 @@ function Product() {
 
   const fetchProduct = async () => {
     const { data } = await commerce.products.list({ limit: 100 })
-
+    setLoading(false)
     return data
   }
   const fetchCart = async () => {
@@ -42,10 +42,8 @@ function Product() {
   useEffect(() => {
     const ivie = async () => {
       fetchProduct().then((product) => {
-        setLoading(false)
         const newProduct = product.find(
           (product) => product.attributes[5].value === Links
-          
         )
         setImage(newProduct.image.url)
         setTitle(newProduct.name)
@@ -66,7 +64,6 @@ function Product() {
       fetchCart().then((data) => {
         setCart(data)
         console.log(data)
-        setLoading(false)
       })
     }
     ivie()

@@ -16,6 +16,7 @@ function Book() {
   const fetchProduct = async () => {
     const { data } = await commerce.products.list({ limit: 100 })
     setProduct(data)
+    setLoading(false)
   }
   const fetchCart = async () => {
     const data = await commerce.cart.retrieve()
@@ -40,12 +41,12 @@ function Book() {
     const miracle = async () => {
       fetchCart().then((data) => {
         setCart(data)
-        setLoading(false)
+        
       })
     }
     miracle()
     fetchProduct()
-    document.title = 'About Book Home'
+    document.title = 'Books - Book Home'
   }, [])
   const para = product.length
   return (

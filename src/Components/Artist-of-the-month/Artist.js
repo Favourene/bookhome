@@ -1,9 +1,19 @@
-import React from 'react'
-import Data from '../../Authors/Danielle-steel/Data'
+import React, { useState, useEffect } from 'react'
+import { commerce } from '../../lib/commerce'
 import { Link } from 'react-router-dom'
 import './Artist.css'
 
 function Artist() {
+  const [product, setProduct] = useState([])
+  const fetchProduct = async () => {
+    const { data } = await commerce.products.list({
+      category_slug: ['danielle-steel'],
+    })
+    setProduct(data)
+  }
+  useEffect(() => {
+    fetchProduct()
+  })
   return (
     <div className='artist'>
       <div className='artist__img'>
@@ -25,21 +35,22 @@ function Artist() {
           </p>
         </div>
         <div className='artist__text-wrap'>
-          {Data.slice(0, 4).map((artmon) => {
+          {product.slice(0, 4).map((artmon) => {
             return (
               <div key={artmon.id} className='artist__text-wrap-card'>
-                <Link to={`/books/${artmon.Links}`}>
-                  <img src={artmon.Image} alt='' />
+                <Link to={`/books/${artmon.attributes[5].value}`}>
+                  <img src={artmon.image.url} alt='' />
                 </Link>
                 <div>
-                  <Link to={artmon.Links}>
-                    <h1>{artmon.Title}</h1>
+                  <Link to={artmon.attributes[5].value}>
+                    <h1>{artmon.name}</h1>
                   </Link>
-                  <Link to={artmon.AuthorLink}>
-                    <p>{artmon.Author}</p>
+                  <Link to={artmon.attributes[4].value}>
+                    <p>{artmon.attributes[7].value}</p>
                   </Link>
                   <h3>
-                    <span>{artmon.OldPrice}</span> ${artmon.Price}
+                    <span>{artmon.attributes[6].value}</span> $
+                    {artmon.price.formatted}
                   </h3>
                 </div>
               </div>

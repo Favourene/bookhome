@@ -1,23 +1,48 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { commerce } from '../../lib/commerce'
 import Navbar from '../../Components/navbar/Navbar'
 import Authorside from '../Authorside'
-import Data from './Data'
+import Loading from '../../Components/Loading/Loading'
 import '../general.css'
 
-const para = Data.length
+function Author() {
+  const [product, setProduct] = useState([])
+  const [cart, setCart] = useState({})
+  const [loading, setLoading] = useState(true)
 
-function Schwab() {
-   useEffect(() => {
-     document.title = 'Authors - Book Home'
-   })
-  return (
-    <div>
-      <Navbar />
+  const fetchProduct = async () => {
+    const { data } = await commerce.products.list({
+      category_slug: ['v-e-schwab'],
+    })
+    setProduct(data)
+    setLoading(false)
+  }
+  const fetchCart = async () => {
+    const data = await commerce.cart.retrieve()
+    return data
+  }
+  const Amount = product.length
+
+  useEffect(() => {
+    const miracle = async () => {
+      fetchCart().then((data) => {
+        setCart(data)
+      })
+    }
+    fetchProduct()
+    miracle()
+    document.title = `Authors - Book Home`
+  })
+  return loading ? (
+    <Loading />
+  ) : (
+    <>
+      <Navbar totalItems={cart.total_items} />
       <section className='auth-head'>
         <div className='major__head'>
           <h1>Available Books</h1>
-          <p>Showing 1 - {para} results</p>
+          <p>Showing 1 - {Amount} results</p>
         </div>
       </section>
       <section className='authors'>
@@ -25,21 +50,22 @@ function Schwab() {
           <Authorside />
         </article>
         <main className='authors__main'>
-          {Data.map((item) => {
+          {product.map((item) => {
             return (
               <div key={item.id} className='authors__main-card'>
-                <Link to={`/books/${item.Links}`}>
-                  <img src={item.Image} alt='' />
+                <Link to={`/books/${item.attributes[5].value}`}>
+                  <img src={item.image.url} alt='' />
                 </Link>
                 <div>
-                  <Link to={`/books/${item.Links}`}>
-                    <h2>{item.Title}</h2>
+                  <Link to={`/books/${item.attributes[5].value}`}>
+                    <h2>{item.name}</h2>
                   </Link>
-                  <Link to={item.AuthorLink}>
-                    <h3>{item.Author}</h3>
+                  <Link to={item.attributes[4].value}>
+                    <h3>{item.attributes[7].value}</h3>
                   </Link>
                   <p className='author__wrap-main-card-pra'>
-                    <span> {item.OldPrice}</span> ${item.Price}
+                    <span> {item.attributes[6].value}</span> $
+                    {item.price.formatted}
                   </p>
                 </div>
               </div>
@@ -47,8 +73,8 @@ function Schwab() {
           })}
         </main>
       </section>
-    </div>
+    </>
   )
 }
 
-export default Schwab
+export default Author
