@@ -12,7 +12,7 @@ function Artist() {
     setProduct(data)
   }
   useEffect(() => {
-    fetchProduct()
+    fetchProduct({})
   })
   return (
     <div className='artist'>

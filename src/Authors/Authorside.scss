@@ -5,10 +5,6 @@
   background: #eff0f1;
   border: 1px solid #00000060;
   padding: 30px 20px;
-  @include mobile-2{
-   height: 400px;
-   overflow-y: auto;
-  }
   & h1 {
     font-size: 30px;
     color: $color1;

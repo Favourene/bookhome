@@ -12,7 +12,7 @@ import Top from '../../Components/To-top/top'
 import { commerce } from '../../lib/commerce.js'
 
 
-function App({ totalItems }) {
+function App() {
   const [cart, setCart] = useState({})
   const fetchCart = async () => {
     const data = await commerce.cart.retrieve()

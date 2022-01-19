@@ -127,7 +127,7 @@ function Checkout() {
             </div>
           </div>
           {cart.line_items.map((item) => (
-            <div className='order-wrap'>
+            <div key={item.id} className='order-wrap'>
               <div>
                 <li>
                   {item.name} &nbsp; X{item.quantity}

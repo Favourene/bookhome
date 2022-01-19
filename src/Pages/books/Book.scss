@@ -2,7 +2,7 @@
 
 .major {
   padding: 100px 50px;
-  @include mobile-6{
+  @include mobile-6 {
     padding: 100px 20px;
   }
   & &__head {
@@ -13,14 +13,12 @@
     }
   }
   & &__wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    &-sidebar {
-      width: 25%;
-       @include mobile-2{
-         width: 100%;
-       }
+    .mobile-search {
+      width: 100%;
+      display: none;
+      @include mobile-2 {
+        display: block;
+      }
       & input {
         width: 100%;
         padding: 10px 20px;
@@ -28,7 +26,32 @@
         background: #eff0f1;
         border: 1px solid #00000060;
         margin-bottom: 30px;
-        &::placeholder{
+        &::placeholder {
+          color: #000;
+        }
+      }
+    }
+    .wrap-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap-reverse;
+    }
+    &-sidebar {
+      width: 25%;
+      @include mobile-2 {
+        width: 100%;
+      }
+      & input {
+        width: 100%;
+        padding: 10px 20px;
+        outline: none;
+        background: #eff0f1;
+        border: 1px solid #00000060;
+        margin-bottom: 30px;
+        @include mobile-2 {
+          display: none;
+        }
+        &::placeholder {
           color: #000;
         }
       }
@@ -38,27 +61,27 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-       @include mobile-2{
-         width: 100%;
-         padding-top: 30px;
-       }
+      @include mobile-2 {
+        width: 100%;
+        padding-top: 30px;
+      }
       &-card {
         width: 32%;
         text-align: center;
         padding-bottom: 50px;
-        @include mobile-6{
+        @include mobile-6 {
           width: 47%;
         }
         & img {
           width: 100%;
           height: 350px;
           padding-bottom: 20px;
-           @include mobile-6{
-             height: 400px;
-           }
-            @include mobile-4{
-             height: 250px;
-           }
+          @include mobile-6 {
+            height: 400px;
+          }
+          @include mobile-4 {
+            height: 250px;
+          }
         }
         & a {
           text-decoration: none;

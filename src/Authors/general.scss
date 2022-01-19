@@ -15,7 +15,11 @@
   display: flex;
   padding: 30px 50px;
   justify-content: space-between;
-  flex-wrap: wrap;
+   @include mobile-2 {
+       flex-wrap: wrap-reverse;
+
+    }
+
   @include mobile-6 {
     padding: 0px 20px;
   }
