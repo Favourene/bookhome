@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import Data from './Data'
-import './Events.css'
+import './Events.scss'
 import { commerce } from '../../lib/commerce.js'
 
 function Events() {

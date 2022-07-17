@@ -1,5 +1,5 @@
 import React from 'react'
-import './bookDisplay.css'
+import './bookDisplay.scss'
 import Special from '../special/special'
 import Children from '../homecat/children'
 import Biography from '../homecat/biography'

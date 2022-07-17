@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../navbar/Navbar'
 import Authorside from '../../../Authors/Authorside'
 import Data from './Data'
-import '../../../Authors/general.css'
+import '../../../Authors/general.scss'
 import Top from '../../To-top/top'
 
 const para = Data.length

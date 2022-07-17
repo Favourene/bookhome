@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
-import './Error.css'
+import './Error.scss'
 import { commerce } from '../../lib/commerce.js'
 
 function Error() {

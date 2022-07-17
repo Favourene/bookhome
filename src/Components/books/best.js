@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { commerce } from '../../lib/commerce'
 import { Link } from 'react-router-dom'
-import './book.css'
+import './book.scss'
 function Best() {
   const [product, setProduct] = useState([])
   const fetchProduct = async () => {

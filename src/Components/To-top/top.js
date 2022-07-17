@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ImArrowUp } from 'react-icons/im'
-import './top.css'
+import './top.scss'
 
 function Top() {
   const [visible, setVisible] = useState(false)

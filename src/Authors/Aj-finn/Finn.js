@@ -4,7 +4,7 @@ import { commerce } from '../../lib/commerce'
 import Navbar from '../../Components/navbar/Navbar'
 import Authorside from '../Authorside'
 import Loading from '../../Components/Loading/Loading'
-import '../general.css'
+import '../general.scss'
 
 function Author() {
   const [product, setProduct] = useState([])
@@ -34,10 +34,9 @@ function Author() {
     miracle()
     document.title = `Authors - Book Home`
   })
-  return (
-      loading?
-    <Loading/>
-    :
+  return loading ? (
+    <Loading />
+  ) : (
     <>
       <Navbar totalItems={cart.total_items} />
       <section className='auth-head'>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Noted.css'
-
+import './Noted.scss'
 
 const Data = [
   {
@@ -14,7 +13,7 @@ const Data = [
   {
     id: 2,
     Image:
-      'https://res.cloudinary.com/osaz/image/upload/v1635608849/Book%20Home/Books/Authors/Maya%20angelou/images_t6xt0p.jpg',
+      'https://res.cloudinary.com/osaz/image/upload/v1658090459/Book%20Home/Books/Authors/Maya%20angelou/maya_angelou_photo_by_deborah_feingold_corbis_entertainment_getty_533084708_buhc19.jpg',
     Name: 'Maya Angelou',
     Links: 'maya-angelou',
   },
@@ -34,35 +33,35 @@ const Data = [
   },
 ]
 function Noted() {
- return (
-   <div className='noted'>
-     <div className='noted__head'>
-       <div className='noted__head-one'>
-         <h1>Noted Authors</h1>
-         <p>Authors & their works are the center of everything we do</p>
-       </div>
-       <div className='noted__head-two'>
-         <Link to='/authors'>Full Authors List</Link>
-       </div>
-     </div>
-     <div className='noted__wrap'>
-       {Data.map((note) => {
-         return (
-           <div key={note.id} className='noted__wrap-card'>
-             <div className='noted__wrap-card-img'>
-               <Link to={note.Links}>
-                 <img src={note.Image} alt='' />
-               </Link>
-             </div>
-             <Link to={note.Links}>
-               <h1>{note.Name}</h1>
-             </Link>
-           </div>
-         )
-       })}
-     </div>
-   </div>
- )
+  return (
+    <div className='noted'>
+      <div className='noted__head'>
+        <div className='noted__head-one'>
+          <h1>Noted Authors</h1>
+          <p>Authors & their works are the center of everything we do</p>
+        </div>
+        <div className='noted__head-two'>
+          <Link to='/authors'>Full Authors List</Link>
+        </div>
+      </div>
+      <div className='noted__wrap'>
+        {Data.map((note) => {
+          return (
+            <div key={note.id} className='noted__wrap-card'>
+              <div className='noted__wrap-card-img'>
+                <Link to={note.Links}>
+                  <img src={note.Image} alt='' />
+                </Link>
+              </div>
+              <Link to={note.Links}>
+                <h1>{note.Name}</h1>
+              </Link>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
 }
 
 export default Noted

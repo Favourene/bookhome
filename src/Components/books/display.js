@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-import './display.css'
+import './display.scss'
 import Best from './best'
 import Latest from './latest'
 import Sale from './sale'

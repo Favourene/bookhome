@@ -3,7 +3,7 @@ import { commerce } from '../../lib/commerce'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.css'
-import './Topbooks.css'
+import './Topbooks.scss'
 
 
 // import Swiper core and required modules

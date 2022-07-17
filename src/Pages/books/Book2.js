@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
-import './Book.css'
+import './Book.scss'
 import Data from '../../Components/books/data'
 import Authorside from '../../Authors/Authorside'
 import Top from '../../Components/To-top/top'

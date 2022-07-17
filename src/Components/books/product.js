@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 import Navbar from '../navbar/Navbar'
-import './product.css'
+import './product.scss'
 import { commerce } from '../../lib/commerce.js'
 import Loading from '../Loading/Loading'
 
@@ -57,7 +57,6 @@ function Product() {
         setLanguage(newProduct.attributes[0].value)
         setDescription(newProduct.description)
         setId(newProduct.id)
-
       })
     }
     const miracle = async () => {
@@ -90,7 +89,15 @@ function Product() {
             <h3>
               <span>{oldprice}</span> ${price}
             </h3>
-            <p className='product__right-wrap-p'>{description.slice(3, -4)}</p>
+            <p className='product__right-wrap-p'>
+              A brand-new edition to help you lift your energy, unlock a higher
+              frequency, and start receiving more joy and miracles in your
+              life!Everything is comprised of energy, including you! You express
+              energy in what you create, experience, and attract. Right now, the
+              Universe is calling you to align your life to a higher energetic
+              frequency, and at any given moment you have the opportunity to
+              Raise Your Vibration.
+            </p>
             <div className='product__right-wrap-wrapper'>
               <div className='product__right-wrap-wrapper-left'>
                 <p>Publisher:</p>

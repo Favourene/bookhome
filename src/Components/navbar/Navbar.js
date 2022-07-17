@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { BsBag } from 'react-icons/bs'
 import Logo from './logo.png'
-import './Navbar.css'
+import './Navbar.scss'
 
 const Navbar = ({totalItems}) => {
   const [isActive, setActive] = useState('false')

@@ -1,7 +1,7 @@
 import React from 'react'
 import Authordata from '../Authors/AuthorsData'
 import { Link } from 'react-router-dom'
-import './Authorside.css'
+import './Authorside.scss'
 
 function Authorside() {
  return (

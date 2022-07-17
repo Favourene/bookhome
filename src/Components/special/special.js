@@ -3,7 +3,7 @@ import { commerce } from '../../lib/commerce'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Link } from 'react-router-dom'
 import 'swiper/swiper-bundle.css'
-import './special.css'
+import './special.scss'
 
 function Special() {
   const [product, setProduct] = useState([])

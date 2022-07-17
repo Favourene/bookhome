@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { commerce } from '../../lib/commerce'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Link } from 'react-router-dom'
-import './children.css'
+import './children.scss'
 import 'swiper/swiper-bundle.css'
 
 function Children() {

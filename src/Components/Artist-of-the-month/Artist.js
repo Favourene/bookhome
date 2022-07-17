@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { commerce } from '../../lib/commerce'
 import { Link } from 'react-router-dom'
-import './Artist.css'
+import './Artist.scss'
 
 function Artist() {
   const [product, setProduct] = useState([])
@@ -27,11 +27,11 @@ function Artist() {
           <h2>AUTHOR OF THE MONTH</h2>
           <h1>Danielle Steel</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            blanditiis, voluptatem illo pariatur provident recusandae. Facilis,
-            ducimus illo ex, est veritatis, praesentium labore iure odit maiores
-            inventore quas repellendus veniam. Voluptates, animi earum!
-            Necessitatibus doloribus quae eius, provident ducimus officia.
+            Danielle Fernandes Dominique Schuelein-Steel (born August 14, 1947)
+            is an American writer, best known for her romance novels. She is the
+            bestselling author alive and the fourth-bestselling fiction author
+            of all time, with over 800 million copies sold. As of 2021, she has
+            written 190 books, including over 141 novels.
           </p>
         </div>
         <div className='artist__text-wrap'>

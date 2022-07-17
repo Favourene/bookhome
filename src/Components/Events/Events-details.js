@@ -3,7 +3,7 @@ import { useParams } from 'react-router'
 import Data from '../../Pages/Events/Data'
 import { ImLocation, ImCalendar, ImClock } from 'react-icons/im'
 import Navbar from '../navbar/Navbar'
-import './Event.css'
+import './Event.scss'
 
 function Events() {
   const { Links } = useParams()

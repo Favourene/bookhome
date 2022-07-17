@@ -3,7 +3,7 @@ import { withRouter, useHistory } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import { commerce } from '../../lib/commerce'
 import Loading from '../../Components/Loading/Loading'
-import './Checkout.css'
+import './Checkout.scss'
 
 function Checkout() {
    const history = useHistory()
