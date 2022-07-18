@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import Data from './Data'
 import { commerce } from '../../lib/commerce.js'
+import Footer from '../../Components/footer/footer'
 
 function Category() {
   const [cart, setCart] = useState({})
@@ -47,6 +48,7 @@ function Category() {
           })}
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

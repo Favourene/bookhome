@@ -4,6 +4,7 @@ import Navbar from '../../Components/navbar/Navbar'
 import { commerce } from '../../lib/commerce'
 import Loading from '../../Components/Loading/Loading'
 import './Checkout.scss'
+import Footer from '../../Components/footer/footer'
 
 function Checkout() {
    const history = useHistory()
@@ -151,6 +152,7 @@ function Checkout() {
           <button type='submit'>Order Now</button>
         </div>
       </form>
+      <Footer/>
     </>
   )
 }

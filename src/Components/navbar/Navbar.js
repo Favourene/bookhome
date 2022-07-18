@@ -4,7 +4,8 @@ import { BsBag } from 'react-icons/bs'
 import Logo from './logo.png'
 import './Navbar.scss'
 
-const Navbar = ({totalItems}) => {
+const Navbar = ({ totalItems }) => {
+  const pathname = window.location.pathname
   const [isActive, setActive] = useState('false')
   const handleToggle = () => {
     setActive(!isActive)
@@ -16,16 +17,18 @@ const Navbar = ({totalItems}) => {
         <div className='logo'>
           <img className='logo1' src={Logo} alt='Logo' />
         </div>
-        <div className='hamburgers'>
-          <NavLink
-            activeClassName='navbar__link--active'
-            className='link'
-            to='/cart'
-          >
-            <BsBag />
-            <span>{totalItems}</span>
-          </NavLink>
-        </div>
+        {pathname !== '/checkout' && (
+          <div className='hamburgers'>
+            <NavLink
+              activeClassName='navbar__link--active'
+              className='link'
+              to='/cart'
+            >
+              <BsBag />
+              <span>{totalItems}</span>
+            </NavLink>
+          </div>
+        )}
         <div
           onClick={handleToggle}
           className={isActive ? 'hamburger' : 'hamburger toggle'}
@@ -85,16 +88,18 @@ const Navbar = ({totalItems}) => {
               Contact Us
             </NavLink>
           </li>
-          <li onClick={handleToggle} className='bag'>
-            <NavLink
-              activeClassName='navbar__link--active'
-              className='link '
-              to='/cart'
-            >
-              <BsBag />
-              <span>{totalItems}</span>
-            </NavLink>
-          </li>
+          {pathname !== '/checkout' && (
+            <li onClick={handleToggle} className='bag'>
+              <NavLink
+                activeClassName='navbar__link--active'
+                className='link '
+                to='/cart'
+              >
+                <BsBag />
+                <span>{totalItems}</span>
+              </NavLink>
+            </li>
+          )}
         </ul>
       </nav>
     </>

@@ -6,7 +6,7 @@ import './product.scss'
 import { commerce } from '../../lib/commerce.js'
 import Loading from '../Loading/Loading'
 
-function Product() {
+function Product({ notify }) {
   const [loading, setLoading] = useState(true)
   const { Links } = useParams()
   const [id, setId] = useState()
@@ -37,6 +37,11 @@ function Product() {
   const handleCart = async (productId, quantity) => {
     const item = await commerce.cart.add(productId, quantity)
     setCart(item.cart)
+    console.log(item)
+    if (item.success) {
+      notify('success', `${title} added to cart`)
+      console.log('sucess')
+    }
   }
 
   useEffect(() => {

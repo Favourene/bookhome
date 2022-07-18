@@ -4,6 +4,7 @@ import Navbar from '../../Components/navbar/Navbar'
 import Data from './Data'
 import './Events.scss'
 import { commerce } from '../../lib/commerce.js'
+import Footer from '../../Components/footer/footer'
 
 function Events() {
   const [cart, setCart] = useState({})
@@ -51,6 +52,7 @@ function Events() {
           })}
         </div>
       </section>
+      <Footer/>
     </>
   )
 }

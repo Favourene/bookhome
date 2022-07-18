@@ -1,5 +1,5 @@
 nav {
-  height: 5rem;
+  height: 10vh;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -59,16 +59,16 @@ nav {
 .hamburger {
   display: none;
 }
-.hamburgers{
+.hamburgers {
   display: none;
 }
 
 /*Stying for small screens*/
 @media screen and (max-width: 1024px) {
-  
   nav {
     position: fixed;
     z-index: 3;
+    height: 10vh;
   }
   .hamburger {
     display: block;
@@ -116,9 +116,9 @@ nav {
 
   .nav-links li {
     opacity: 0;
-    &.bag{
-    display: none;
-  }
+    &.bag {
+      display: none;
+    }
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
@@ -159,14 +159,14 @@ nav {
 }
 @media screen and (max-width: 500px) {
   nav {
-    height: 4rem;
+    height: 10vh;
   }
   .logo {
     width: 200px;
   }
-   .hamburgers {
+  .hamburgers {
     right: 20%;
-   }
+  }
 }
 /*Animating Hamburger Icon on Click*/
 .toggle .line1 {

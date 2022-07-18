@@ -3,6 +3,7 @@ import './Contact.scss'
 import Navbar from '../../Components/navbar/Navbar'
 import { ImLocation, ImPhone, ImEnvelop } from 'react-icons/im'
 import { commerce } from '../../lib/commerce.js'
+import Footer from '../../Components/footer/footer'
 
 function Contact() {
   const [cart, setCart] = useState({})
@@ -66,6 +67,7 @@ function Contact() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

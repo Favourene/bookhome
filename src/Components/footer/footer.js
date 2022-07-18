@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import Logo from './logo.png'
 import './footer.scss'
 
-function footer() {
+function Footer() {
   return (
     <>
       <div className='footer'>
@@ -80,4 +80,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer

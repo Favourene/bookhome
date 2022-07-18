@@ -31,7 +31,7 @@ function Error() {
             changed or is temporarily unavailable
           </p>
           <Link to='/'>
-            <button>GO TO HOMEEPAGE</button>
+            <button>GO TO HOMEPAGE</button>
           </Link>
         </div>
       </div>

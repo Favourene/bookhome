@@ -4,6 +4,7 @@ import Data from '../../Pages/Events/Data'
 import { ImLocation, ImCalendar, ImClock } from 'react-icons/im'
 import Navbar from '../navbar/Navbar'
 import './Event.scss'
+import Footer from '../footer/footer'
 
 function Events() {
   const { Links } = useParams()
@@ -21,20 +22,20 @@ function Events() {
   const [time, setTime] = useState('default')
 
   useEffect(() => {
-   const newEvent = Data.find((event)=> event.Links === Links)
-   setImage(newEvent.Image)
-   setTitle(newEvent.Title)
-   setContent1(newEvent.Content1)
-   setContent2(newEvent.Content2)
-   setContent3(newEvent.Content3)
-   setContent4(newEvent.Content4)
-   setContent5(newEvent.Content5)
-   setLocation(newEvent.Location)
-   setLocationlink(newEvent.Locationlink)
-   setDate(newEvent.Date)
-   setDatelink(newEvent.Datelink)
-   setTime(newEvent.Time)
-   document.title = newEvent.Title + ' - Book Home' ;
+    const newEvent = Data.find((event) => event.Links === Links)
+    setImage(newEvent.Image)
+    setTitle(newEvent.Title)
+    setContent1(newEvent.Content1)
+    setContent2(newEvent.Content2)
+    setContent3(newEvent.Content3)
+    setContent4(newEvent.Content4)
+    setContent5(newEvent.Content5)
+    setLocation(newEvent.Location)
+    setLocationlink(newEvent.Locationlink)
+    setDate(newEvent.Date)
+    setDatelink(newEvent.Datelink)
+    setTime(newEvent.Time)
+    document.title = newEvent.Title + ' - Book Home'
   }, [Links])
 
   return (
@@ -88,6 +89,7 @@ function Events() {
           </div>
         </main>
       </section>
+      <Footer />  
     </>
   )
 }

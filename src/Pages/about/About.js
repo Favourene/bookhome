@@ -6,6 +6,7 @@ import { BsDropletFill } from 'react-icons/bs'
 import { FaSeedling } from 'react-icons/fa'
 import { GiBookCover } from 'react-icons/gi'
 import { commerce } from '../../lib/commerce.js'
+import Footer from '../../Components/footer/footer'
 
 function About() {
   const [cart, setCart] = useState({})
@@ -202,6 +203,7 @@ function About() {
         </div>
       </div>
       <Top />
+      <Footer />
     </>
   )
 }
