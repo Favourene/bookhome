@@ -40,7 +40,7 @@ function Contact() {
             </div>
             <div>
               <h2>Location</h2>
-              <p> Anywhere</p>
+              <p> Lagos, Nigeria</p>
             </div>
           </div>
           <div className='map-wrap-card'>
@@ -51,7 +51,7 @@ function Contact() {
             </div>
             <div>
               <h2>Phone</h2>
-              <p> +123 456 789 0098</p>
+              <p> +234 9074 4498 191</p>
             </div>
           </div>
           <div className='map-wrap-card'>
@@ -62,12 +62,12 @@ function Contact() {
             </div>
             <div>
               <h2>Email</h2>
-              <p>Fresh@gmial.com</p>
+              <p>bookhomesup@gmail.com</p>
             </div>
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

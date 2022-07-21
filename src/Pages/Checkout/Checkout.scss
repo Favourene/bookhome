@@ -35,9 +35,24 @@
             @include mobile-2 {
               width: 95%;
             }
+            &.stri {
+              input {
+                border-radius: 6px;
+                margin-bottom: 6px;
+                padding: 12px;
+                border: 1px solid rgba(50, 50, 93, 0.1);
+                max-height: 44px;
+                font-size: 16px;
+                width: 100%;
+                background: red;
+                box-sizing: border-box;
+              }
+            }
           }
         }
-        & input {
+
+        & input,
+        & select {
           width: 90%;
           padding: 10px;
           @include mobile-2 {
@@ -75,7 +90,8 @@
   }
   & &-button {
     width: 100%;
-    text-align: right;
+    display: flex;
+    justify-content: right;
     & button {
       width: 150px;
       font-weight: bold;
@@ -85,5 +101,72 @@
       color: #fff;
       cursor: pointer;
     }
+    .buttonFake {
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background: #065a60;
+      color: #fff;
+      cursor: pointer;
+      .spim {
+        padding-left: 10px;
+        span {
+          height: 18px !important;
+        }
+      }
+    }
   }
 }
+.confirm {
+  padding: 150px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mobile-4 {
+    padding: 100px 20px;
+  }
+  & .wrapper {
+    width: 50%;
+    @include mobile-6 {
+      width: 70%;
+    }
+    @include mobile-4 {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      padding-bottom: 50px;
+    }
+    div {
+      text-align: center;
+      h2 {
+        font-size: 40px;
+        color: #272640;
+        @include mobile-3 {
+          font-size: 30px;
+        }
+      }
+      p {
+        padding: 10px;
+        font-size: 20px;
+        color: dimgrey;
+        padding-bottom: 40px;
+        @include mobile-3 {
+          font-size: 15px;
+        }
+      }
+      button {
+        @include button;
+      }
+    }
+  }
+}
+// .payment {
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   background: #000;
+//   z-index: 100;
+// }

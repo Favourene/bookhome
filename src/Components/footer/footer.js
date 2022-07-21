@@ -59,10 +59,10 @@ function Footer() {
           </div>
           <div className='footer__wrap-cont'>
             <li>
-              <b>Tel:</b> +123 4565 7685
+              <b>Tel:</b> +234 9074 4498 191
             </li>
             <li>
-              <b>Email:</b> Fresh@bookhome.com
+              <b>Email:</b> bookhomesup@gmail.com
             </li>
             <li>
               <b>&copy;</b> Copyright .{' '}

@@ -132,10 +132,18 @@ function App() {
         <Route path='/children-book' component={Kids} />
         <Route path='/art' component={Art} />
         <Route path='/mystery' component={Mystery} />
-        <Route exact path='/books/:Links' children={<Product notify={notify}/>}></Route>
+        <Route
+          exact
+          path='/books/:Links'
+          children={<Product notify={notify} />}
+        ></Route>
         <Route exact path='/events/:Links' children={<Eventdet />}></Route>
         <Route exact path='/cart' children={<Cart />}></Route>
-        <Route exact path='/checkout' children={<Checkout />}></Route>
+        <Route
+          exact
+          path='/checkout'
+          children={<Checkout notify={notify} />}
+        ></Route>
         <Route exact path='*' component={Errorss} />
       </Switch>
       {/* <Footer /> */}
