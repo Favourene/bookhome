@@ -1,28 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import './Contact.scss'
 import Navbar from '../../Components/navbar/Navbar'
 import { ImLocation, ImPhone, ImEnvelop } from 'react-icons/im'
-import { commerce } from '../../lib/commerce.js'
 import Footer from '../../Components/footer/footer'
 
 function Contact() {
-  const [cart, setCart] = useState({})
-  const fetchCart = async () => {
-    const data = await commerce.cart.retrieve()
-    return data
-  }
   useEffect(() => {
-    const miracle = async () => {
-      fetchCart().then((data) => {
-        setCart(data)
-      })
-    }
-    miracle()
     document.title = 'Contact Us - Book Home'
   }, [])
   return (
     <div>
-      <Navbar totalItems={cart.total_items} />
+      <Navbar />
       <section className='map'>
         <iframe
           className='map-where'

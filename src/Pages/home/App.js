@@ -29,7 +29,7 @@ function App() {
   }, [])
   return (
     <div className='App'>
-      <Navbar totalItems={cart.total_items} />
+      <Navbar />
       <Swiper />
       <Display />
       <Newsletter />

@@ -11,7 +11,6 @@ function Special() {
     const { data } = await commerce.products.list({
       category_slug: ['special-offer'],
     })
-
     setProduct(data)
   }
   useEffect(() => {
@@ -45,7 +44,7 @@ function Special() {
         {product.map((offer) => {
           return (
             <SwiperSlide key={offer.id} className='special__card'>
-              <Link to={offer.attributes[4].value}>
+              <Link to={`/author/${offer.attributes[4].value}`}>
                 <p className='special__card-author'>
                   {offer.attributes[7].value}
                 </p>

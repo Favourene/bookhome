@@ -1,31 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './About.scss'
 import Navbar from '../../Components/navbar/Navbar'
 import Top from '../../Components/To-top/top'
 import { BsDropletFill } from 'react-icons/bs'
 import { FaSeedling } from 'react-icons/fa'
 import { GiBookCover } from 'react-icons/gi'
-import { commerce } from '../../lib/commerce.js'
 import Footer from '../../Components/footer/footer'
 
 function About() {
-  const [cart, setCart] = useState({})
-  const fetchCart = async () => {
-    const data = await commerce.cart.retrieve()
-    return data
-  }
   useEffect(() => {
-    const miracle = async () => {
-      fetchCart().then((data) => {
-        setCart(data)
-      })
-    }
-    miracle()
     document.title = 'About Book Home'
   }, [])
   return (
     <>
-      <Navbar totalItems={cart.total_items} />
+      <Navbar />
       <div className='about'>
         <div className='about__dp'>
           <img

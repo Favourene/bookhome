@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
+import { useGlobalContext } from '../../lib/Context'
 import { NavLink } from 'react-router-dom'
 import { BsBag } from 'react-icons/bs'
 import Logo from './logo.png'
 import './Navbar.scss'
 
-const Navbar = ({ totalItems }) => {
+const Navbar = () => {
   const pathname = window.location.pathname
+  const { cart } = useGlobalContext()
   const [isActive, setActive] = useState('false')
   const handleToggle = () => {
     setActive(!isActive)
@@ -25,7 +27,7 @@ const Navbar = ({ totalItems }) => {
               to='/cart'
             >
               <BsBag />
-              <span>{totalItems}</span>
+              <span>{cart.total_items}</span>
             </NavLink>
           </div>
         )}
@@ -96,7 +98,7 @@ const Navbar = ({ totalItems }) => {
                 to='/cart'
               >
                 <BsBag />
-                <span>{totalItems}</span>
+                <span>{cart.total_items}</span>
               </NavLink>
             </li>
           )}

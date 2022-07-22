@@ -42,7 +42,7 @@ function Artist() {
                   <img src={artmon.image.url} alt='' />
                 </Link>
                 <div>
-                  <Link to={artmon.attributes[5].value}>
+                  <Link to={`/author/${artmon.attributes[4].value}`}>
                     <h1>{artmon.name}</h1>
                   </Link>
                   <Link to={artmon.attributes[4].value}>

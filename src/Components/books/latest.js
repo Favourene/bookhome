@@ -33,7 +33,7 @@ function Latest() {
             </Link>
             <Link
               className='book__wrap-card-p'
-              to={`/${best.attributes[4].value}`}
+              to={`/author/${best.attributes[4].value}`}
             >
               <p>{best.attributes[7].value}</p>
             </Link>

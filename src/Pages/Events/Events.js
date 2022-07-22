@@ -1,29 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import Data from './Data'
 import './Events.scss'
-import { commerce } from '../../lib/commerce.js'
 import Footer from '../../Components/footer/footer'
 
 function Events() {
-  const [cart, setCart] = useState({})
-  const fetchCart = async () => {
-    const data = await commerce.cart.retrieve()
-    return data
-  }
   useEffect(() => {
-    const miracle = async () => {
-      fetchCart().then((data) => {
-        setCart(data)
-      })
-    }
-    miracle()
     document.title = 'Events - Book Home'
   }, [])
   return (
     <>
-      <Navbar totalItems={cart.total_items} />
+      <Navbar />
       <section className='events'>
         <div className='events__head'>
           <h1>Events</h1>
@@ -52,7 +40,7 @@ function Events() {
           })}
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   )
 }

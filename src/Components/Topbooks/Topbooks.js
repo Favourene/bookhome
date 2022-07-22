@@ -67,7 +67,7 @@ function Topbooks() {
                   <p>
                     by{' '}
                     <span>
-                      <Link to={topbook.attributes[4].value}>
+                      <Link to={`/author/${topbook.attributes[4].value}`}>
                         {topbook.attributes[7].value}
                       </Link>
                     </span>

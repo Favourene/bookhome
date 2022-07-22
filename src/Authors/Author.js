@@ -1,28 +1,45 @@
 import React, { useState, useEffect } from 'react'
-import { commerce } from '../../lib/commerce'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
-import Navbar from '../../Components/navbar/Navbar'
-import './Book.scss'
-import Authorside from '../../Authors/Authorside'
-import Top from '../../Components/To-top/top'
-import Loading from '../../Components/Loading/Loading'
+import { Link, useParams } from 'react-router-dom'
+import Navbar from '../Components/navbar/Navbar'
+import Loading from '../Components/Loading/Loading'
+import { commerce } from '../lib/commerce'
+import Authorside from './Authorside'
 
-function Book() {
+function Author() {
+  const { name } = useParams()
   const [product, setProduct] = useState([])
+  const [cart, setCart] = useState({})
+  const [loading, setLoading] = useState(true)
   const [searchBook, setSearchBook] = useState('')
   const [filteredResults, setFilteredResults] = useState([])
-  const [loading, setLoading] = useState(true)
   const [toggleLeft, setoggleLeft] = useState('false')
 
-  const togglingLeft = () => {
-    setoggleLeft(!toggleLeft)
-  }
   const fetchProduct = async () => {
-    const { data } = await commerce.products.list({ limit: 100 })
+    const { data } = await commerce.products.list({
+      category_slug: [name],
+    })
     setProduct(data)
     setLoading(false)
   }
+  console.log(name)
+  const togglingLeft = () => {
+    setoggleLeft(!toggleLeft)
+  }
+  const fetchCart = async () => {
+    const data = await commerce.cart.retrieve()
+    return data
+  }
+  useEffect(() => {
+    const miracle = async () => {
+      fetchCart().then((data) => {
+        setCart(data)
+      })
+    }
+    fetchProduct()
+    miracle()
+    document.title = `Authors - Book Home`
+  }, [name])
   const findBook = (found) => {
     setSearchBook(found)
     if (searchBook !== '') {
@@ -37,10 +54,6 @@ function Book() {
       setFilteredResults(product)
     }
   }
-  useEffect(() => {
-    fetchProduct()
-    document.title = 'About Book Home'
-  }, [])
   const para = product.length
   return loading ? (
     <Loading />
@@ -128,9 +141,8 @@ function Book() {
           </div>
         </div>
       </section>
-      <Top />
     </>
   )
 }
 
-export default Book
+export default Author

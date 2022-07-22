@@ -41,7 +41,7 @@ function Noted() {
           <p>Authors & their works are the center of everything we do</p>
         </div>
         <div className='noted__head-two'>
-          <Link to='/authors'>Full Authors List</Link>
+          <Link to='/books'>Full Authors List</Link>
         </div>
       </div>
       <div className='noted__wrap'>
@@ -49,7 +49,7 @@ function Noted() {
           return (
             <div key={note.id} className='noted__wrap-card'>
               <div className='noted__wrap-card-img'>
-                <Link to={note.Links}>
+                <Link to={`/author/${note.Links}`}>
                   <img src={note.Image} alt='' />
                 </Link>
               </div>

@@ -8,7 +8,6 @@ function Best() {
     const { data } = await commerce.products.list({
       category_slug: ['best-selling'],
     })
-
     setProduct(data)
   }
   useEffect(() => {
@@ -33,7 +32,7 @@ function Best() {
             </Link>
             <Link
               className='book__wrap-card-p'
-              to={`/${best.attributes[4].value}`}
+              to={`/author/${best.attributes[4].value}`}
             >
               <p>{best.attributes[7].value}</p>
             </Link>

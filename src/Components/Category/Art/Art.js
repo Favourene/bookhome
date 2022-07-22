@@ -35,7 +35,7 @@ function Art() {
                   <Link to={`/books/${item.Links}`}>
                     <h2>{item.Title}</h2>
                   </Link>
-                  <Link to={item.AuthorLink}>
+                  <Link to={`/author/${item.AuthorLink}`}>
                     <h3>{item.Author}</h3>
                   </Link>
                   <p className='author__wrap-main-card-pra'>

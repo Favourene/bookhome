@@ -6,17 +6,17 @@ import './children.scss'
 import 'swiper/swiper-bundle.css'
 
 function Children() {
-   const [product, setProduct] = useState([])
-   const fetchProduct = async () => {
-     const { data } = await commerce.products.list({
-       category_slug: ['children'],
-     })
+  const [product, setProduct] = useState([])
+  const fetchProduct = async () => {
+    const { data } = await commerce.products.list({
+      category_slug: ['children'],
+    })
 
-     setProduct(data)
-   }
-   useEffect(() => {
-     fetchProduct()
-   }, [])
+    setProduct(data)
+  }
+  useEffect(() => {
+    fetchProduct()
+  }, [])
   return (
     <div className='children'>
       <div className='children__head'>
@@ -50,7 +50,7 @@ function Children() {
                   <img src={child.image.url} alt='' />
                 </Link>
                 <div className='children__swiper-card-text'>
-                  <Link to={child.attributes[4].value}>
+                  <Link to={`/author/${child.attributes[4].value}`}>
                     <p>{child.attributes[7].value}</p>
                   </Link>
                   <Link to={`/books/${child.attributes[5].value}`}>

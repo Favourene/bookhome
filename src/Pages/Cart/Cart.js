@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
+import { useGlobalContext } from '../../lib/Context'
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/navbar/Navbar'
 import { AiFillDelete } from 'react-icons/ai'
 import { commerce } from '../../lib/commerce.js'
-import Loading from '../../Components/Loading/Loading'
 import './Cart.scss'
 
 function Cart() {
-  const [cart, setCart] = useState({})
-  const [loading, setLoading] = useState(true)
-
-  const fetchCart = async () => {
-    const data = await commerce.cart.retrieve()
-    return data
-  }
+  const { cart, setCart } = useGlobalContext()
   const updateQty = async (productId, quantity) => {
     const item = await commerce.cart.update(productId, { quantity })
     setCart(item.cart)
@@ -23,21 +17,12 @@ function Cart() {
     setCart(item.cart)
   }
   useEffect(() => {
-    const miracle = async () => {
-      fetchCart().then((data) => {
-        setCart(data)
-        setLoading(false)
-      })
-    }
-    miracle()
-    document.title = 'Contact Us - Book Home'
+    document.title = 'Cart - Book Home'
   }, [])
 
-  return loading ? (
-    <Loading />
-  ) : (
+  return (
     <>
-      <Navbar totalItems={cart.total_items} />
+      <Navbar />
       <section className='cartPage'>
         <section className='cart-hero'>
           <h1>Cart</h1>

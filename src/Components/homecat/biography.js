@@ -50,7 +50,7 @@ function Biography() {
                   <img src={child.image.url} alt='' />
                 </Link>
                 <div className='children__swiper-card-text'>
-                  <Link to={child.attributes[4].value}>
+                  <Link to={`/author/${child.attributes[4].value}`}>
                     <p>{child.attributes[7].value}</p>
                   </Link>
                   <Link to={`/books/${child.attributes[5].value}`}>

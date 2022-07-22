@@ -20,12 +20,17 @@
         border-bottom: 1px solid #00000060;
         margin-bottom: 20px;
         text-transform: capitalize;
-        &:hover{
-         color: $color2;
-         border-bottom: 1px solid $color2;
+        &:hover {
+          color: $color2;
+          border-bottom: 1px solid $color2;
         }
         & p {
           text-transform: capitalize;
+        }
+        &.active {
+          color: $color2;
+          border-bottom: 1px solid $color2;
+          font-weight: bold;
         }
       }
     }

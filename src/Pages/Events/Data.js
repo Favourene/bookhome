@@ -2,48 +2,40 @@ const Data = [
   {
     id: 1,
     Image:
-      'https://res.cloudinary.com/osaz/image/upload/v1636068456/Book%20Home/Events/IAM_0041w_dtssju_wqdbzb.jpg',
-    Title: 'Preparing Charcuterie and Cheese at Home',
-    Links: 'Preparing-Charcuterie-and-Cheese-at-Home',
-    Content1:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ante elementum, mattis tortor malesuada, consectetur risus. Praesent consequat imperdiet massa, sit amet ultricies orci malesuada nec. Donec fermentum urna ut dui ultrices rhoncus. Aliquam nec risus lacus. Fusce fermentum sapien sit amet ullamcorper varius. Suspendisse sit amet iaculis est. Aliquam lobortis urna nec turpis bibendum, sit amet venenatis nisi lacinia. Nunc dignissim dolor vitae tortor vestibulum, eget luctus lectus porta.',
-    Content2:
-      'Nullam tincidunt sapien sed sollicitudin facilisis. Ut hendrerit semper quam vel lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt condimentum finibus. Donec eu turpis nec dolor aliquet cursus. Proin sit amet egestas enim, quis fringilla sem. Etiam efficitur sollicitudin orci, eu scelerisque lorem hendrerit ac. Proin consectetur ut nibh sit amet suscipit. Morbi ullamcorper eu lorem sed lobortis. Sed consectetur dictum felis a laoreet. Nullam libero turpis, dapibus a ultricies sed, venenatis eget metus.',
-    Content3:
-      ' Phasellus consectetur risus quis ultrices interdum. Morbi auctor leo non augue semper, ac volutpat massa semper. Maecenas malesuada consequat lorem, quis aliquam leo convallis eu. Fusce odio ante, varius eu lacinia id, ultricies ut nisi. Proin rutrum lectus dolor, in sollicitudin risus malesuada vitae. Donec quis leo a velit pretium euismod. Suspendisse potenti. In hac habitasse platea dictumst. Mauris ac aliquam tortor. In sit amet tortor laoreet, facilisis neque ac, fermentum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis convallis dolor, sit amet tempor purus. Ut sed eleifend erat, a luctus dolor. Nulla eleifend ante consectetur magna efficitur cursus sit amet eget leo. Etiam arcu mi, fermentum eu ultricies suscipit, viverra ut ipsum. Phasellus commodo mattis sem at luctus.',
-    Content4:
-      'Phasellus lacus tortor, aliquet non tortor nec, accumsan vulputate libero. Nam semper tellus tellus, at ultrices lacus feugiat eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam finibus id ipsum hendrerit vulputate. Integer molestie sit amet lectus a viverra. Quisque vulputate tortor magna, id auctor arcu condimentum eu. Curabitur velit enim, varius vel faucibus in, hendrerit ut lorem. Suspendisse sed neque in libero sodales iaculis vitae id nisi. Phasellus laoreet enim suscipit pharetra sollicitudin. Morbi suscipit ipsum est, in mattis libero dictum id. Duis ut ipsum dui. Ut quis vehicula felis.',
-    Content5: `
-    Proin non vulputate enim, vitae elementum libero. Mauris convallis, urna sit amet dapibus ultrices, enim diam lobortis ligula, at hendrerit sapien felis in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor accumsan scelerisque. Aenean quis diam sit amet erat egestas scelerisque. Pellentesque posuere rutrum nulla, et efficitur leo interdum at. Pellentesque mattis, neque vel tincidunt cursus, turpis nunc tempor lectus, in tempor nibh dolor vel urna.`,
-    Location: 'The Venue Hotel',
+      'https://res.cloudinary.com/osaz/image/upload/v1658511701/Book%20Home/Events/ezgif-3-c0177c4756_snlzex.jpg',
+    Title: 'Hangout Hexavian Decoded [Physical]',
+    Links: 'Hangout-Hexavian-Decoded',
+    Content1: `Ordinary is uninteresting. Either think irrationally, or surround yourself with a few individuals who do. Disruption, creativity, and the sparks that transform the world are all due to these misfits. We take pride in being normal, which is one of the problems with the majority of us. Being that isn't particularly noble. Since most of us have a nearly zero mathematical SD, this presents a hurdle ( Standard Deviation; divergence from the arithmetic mean of our inner circle ). This indicates that you socialize with the same kind of people far too frequently. There’s really nothing to learn from that.`,
+    Content2: `Don't miss spending time on the 29th of July with individuals from similar different businesses to your own and taking advantage of the chances and lessons it holds.#HexaviaDecoded`,
+    Content3: `Creativity is defined as intelligence having fun.Let’s party, engage cerebrally and network with divergent minds from arts, tech and business. Join us on the 29th of July at The Hexavia Decoded.`,
+    Content4: 'Attendance is free but registration is compulsory',
+    Content5: ``,
+    Location:
+      'The artroom love portion creativehub vi 273 kofo abayomi Lagos, victoria island 100001',
     Locationlink: 'https://goo.gl/maps/uzhwQJ5DQRLYGGUs8',
-    Date: '1st November 2021',
+    Date: 'Fri, July 29, 2022',
     Datelink:
       'https://calendar.google.com/event?action=TEMPLATE&tmeid=M3A0anJ1NzYzbzQ2dWVxbTFpbDB0bnI2NDIgaWdiaW5vc2Fpd2lub3NhMDFAbQ&tmsrc=igbinosaiwinosa01%40gmail.com',
-    Time: '10:00 am',
+    Time: '6:00 PM – 10:00 PM WAT',
   },
   {
     id: 2,
     Image:
-      'https://res.cloudinary.com/osaz/image/upload/v1636067108/Book%20Home/Events/toa-heftiba-462478-unsplash_kbpils.jpg',
-    Title: 'Book Party: The Door at the End of the World',
-    Links: 'Book-Party:-The-Door-at-the-End-of-the-World',
+      'https://res.cloudinary.com/osaz/image/upload/v1658512650/Book%20Home/Events/ezgif-3-b4d9c56824_jd1p3z.jpg',
+    Title: 'Books with Beth: Hell of a Book by Jason Mott',
+    Links: 'Books-with-Beth:-Hell-of-a-Book',
     Content1:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ante elementum, mattis tortor malesuada, consectetur risus. Praesent consequat imperdiet massa, sit amet ultricies orci malesuada nec. Donec fermentum urna ut dui ultrices rhoncus. Aliquam nec risus lacus. Fusce fermentum sapien sit amet ullamcorper varius. Suspendisse sit amet iaculis est. Aliquam lobortis urna nec turpis bibendum, sit amet venenatis nisi lacinia. Nunc dignissim dolor vitae tortor vestibulum, eget luctus lectus porta.',
-    Content2:
-      'Nullam tincidunt sapien sed sollicitudin facilisis. Ut hendrerit semper quam vel lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt condimentum finibus. Donec eu turpis nec dolor aliquet cursus. Proin sit amet egestas enim, quis fringilla sem. Etiam efficitur sollicitudin orci, eu scelerisque lorem hendrerit ac. Proin consectetur ut nibh sit amet suscipit. Morbi ullamcorper eu lorem sed lobortis. Sed consectetur dictum felis a laoreet. Nullam libero turpis, dapibus a ultricies sed, venenatis eget metus.',
-    Content3:
-      ' Phasellus consectetur risus quis ultrices interdum. Morbi auctor leo non augue semper, ac volutpat massa semper. Maecenas malesuada consequat lorem, quis aliquam leo convallis eu. Fusce odio ante, varius eu lacinia id, ultricies ut nisi. Proin rutrum lectus dolor, in sollicitudin risus malesuada vitae. Donec quis leo a velit pretium euismod. Suspendisse potenti. In hac habitasse platea dictumst. Mauris ac aliquam tortor. In sit amet tortor laoreet, facilisis neque ac, fermentum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis convallis dolor, sit amet tempor purus. Ut sed eleifend erat, a luctus dolor. Nulla eleifend ante consectetur magna efficitur cursus sit amet eget leo. Etiam arcu mi, fermentum eu ultricies suscipit, viverra ut ipsum. Phasellus commodo mattis sem at luctus.',
-    Content4:
-      'Phasellus lacus tortor, aliquet non tortor nec, accumsan vulputate libero. Nam semper tellus tellus, at ultrices lacus feugiat eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam finibus id ipsum hendrerit vulputate. Integer molestie sit amet lectus a viverra. Quisque vulputate tortor magna, id auctor arcu condimentum eu. Curabitur velit enim, varius vel faucibus in, hendrerit ut lorem. Suspendisse sed neque in libero sodales iaculis vitae id nisi. Phasellus laoreet enim suscipit pharetra sollicitudin. Morbi suscipit ipsum est, in mattis libero dictum id. Duis ut ipsum dui. Ut quis vehicula felis.',
-    Content5: `
-    Proin non vulputate enim, vitae elementum libero. Mauris convallis, urna sit amet dapibus ultrices, enim diam lobortis ligula, at hendrerit sapien felis in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor accumsan scelerisque. Aenean quis diam sit amet erat egestas scelerisque. Pellentesque posuere rutrum nulla, et efficitur leo interdum at. Pellentesque mattis, neque vel tincidunt cursus, turpis nunc tempor lectus, in tempor nibh dolor vel urna.`,
-    Location: 'The Heavenly Royale Library',
+      'Winner of the 2021 Sir Walter Raleigh Award for Fiction, Joyce Carol Oates Literary Prize Finalist, 2022 Chautauqua Prize Finalist, Willie Morris Award for Southern Writing Shortlist, and the 2021 Aspen Words Literary Prize shortlist.',
+    Content2: `In Jason Mott’s Hell of a Book, a Black author sets out on a cross-country publicity tour to promote his bestselling novel. That storyline drives Hell of a Book and is the scaffolding of something much larger and more urgent: Mott’s novel also tells the story of Soot, a young Black boy living in a rural town in the recent past, and The Kid, a possibly imaginary child who appears to the author on his tour.`,
+    Content3: `As these characters’ stories build and converge, they astonish. For while this heartbreaking and magical book entertains and is at once about family, love of parents and children, art and money, it’s also about the nation’s reckoning with a tragic police shooting playing over and over again on the news. And with what it can mean to be Black in America.`,
+    Content4: `Who has been killed? Who is The Kid? Will the author finish his book tour, and what kind of world will he leave behind? Unforgettably told, with characters who burn into your mind and an electrifying plot ideal for book club discussion, Hell of a Book is the novel Mott has been writing in his head for the last ten years. And in its final twists, it truly becomes its title.`,
+    Content5: ``,
+    Location: 'Virtual',
     Locationlink: 'https://goo.gl/maps/uzhwQJ5DQRLYGGUs8',
-    Date: '2nd November 2021',
+    Date: 'Tue, September 20, 2022',
     Datelink:
       'https://calendar.google.com/event?action=TEMPLATE&tmeid=M3A0anJ1NzYzbzQ2dWVxbTFpbDB0bnI2NDIgaWdiaW5vc2Fpd2lub3NhMDFAbQ&tmsrc=igbinosaiwinosa01%40gmail.com',
-    Time: '10:00 am',
+    Time: '12:00 PM – 1:00 PM EDT',
   },
   {
     id: 3,
@@ -52,15 +44,11 @@ const Data = [
     Title: `Let's Discuss the book : I’m Malala`,
     Links: `Let's-Discuss-the-book-:-I’m-Malala`,
     Content1:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ante elementum, mattis tortor malesuada, consectetur risus. Praesent consequat imperdiet massa, sit amet ultricies orci malesuada nec. Donec fermentum urna ut dui ultrices rhoncus. Aliquam nec risus lacus. Fusce fermentum sapien sit amet ullamcorper varius. Suspendisse sit amet iaculis est. Aliquam lobortis urna nec turpis bibendum, sit amet venenatis nisi lacinia. Nunc dignissim dolor vitae tortor vestibulum, eget luctus lectus porta.',
-    Content2:
-      'Nullam tincidunt sapien sed sollicitudin facilisis. Ut hendrerit semper quam vel lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt condimentum finibus. Donec eu turpis nec dolor aliquet cursus. Proin sit amet egestas enim, quis fringilla sem. Etiam efficitur sollicitudin orci, eu scelerisque lorem hendrerit ac. Proin consectetur ut nibh sit amet suscipit. Morbi ullamcorper eu lorem sed lobortis. Sed consectetur dictum felis a laoreet. Nullam libero turpis, dapibus a ultricies sed, venenatis eget metus.',
-    Content3:
-      ' Phasellus consectetur risus quis ultrices interdum. Morbi auctor leo non augue semper, ac volutpat massa semper. Maecenas malesuada consequat lorem, quis aliquam leo convallis eu. Fusce odio ante, varius eu lacinia id, ultricies ut nisi. Proin rutrum lectus dolor, in sollicitudin risus malesuada vitae. Donec quis leo a velit pretium euismod. Suspendisse potenti. In hac habitasse platea dictumst. Mauris ac aliquam tortor. In sit amet tortor laoreet, facilisis neque ac, fermentum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis convallis dolor, sit amet tempor purus. Ut sed eleifend erat, a luctus dolor. Nulla eleifend ante consectetur magna efficitur cursus sit amet eget leo. Etiam arcu mi, fermentum eu ultricies suscipit, viverra ut ipsum. Phasellus commodo mattis sem at luctus.',
-    Content4:
-      'Phasellus lacus tortor, aliquet non tortor nec, accumsan vulputate libero. Nam semper tellus tellus, at ultrices lacus feugiat eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam finibus id ipsum hendrerit vulputate. Integer molestie sit amet lectus a viverra. Quisque vulputate tortor magna, id auctor arcu condimentum eu. Curabitur velit enim, varius vel faucibus in, hendrerit ut lorem. Suspendisse sed neque in libero sodales iaculis vitae id nisi. Phasellus laoreet enim suscipit pharetra sollicitudin. Morbi suscipit ipsum est, in mattis libero dictum id. Duis ut ipsum dui. Ut quis vehicula felis.',
-    Content5: `
-    Proin non vulputate enim, vitae elementum libero. Mauris convallis, urna sit amet dapibus ultrices, enim diam lobortis ligula, at hendrerit sapien felis in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor accumsan scelerisque. Aenean quis diam sit amet erat egestas scelerisque. Pellentesque posuere rutrum nulla, et efficitur leo interdum at. Pellentesque mattis, neque vel tincidunt cursus, turpis nunc tempor lectus, in tempor nibh dolor vel urna.`,
+      'Winner of the 2021 Sir Walter Raleigh Award for Fiction, Joyce Carol Oates Literary Prize Finalist, 2022 Chautauqua Prize Finalist, Willie Morris Award for Southern Writing Shortlist, and the 2021 Aspen Words Literary Prize shortlist.',
+    Content2: `In Jason Mott’s Hell of a Book, a Black author sets out on a cross-country publicity tour to promote his bestselling novel. That storyline drives Hell of a Book and is the scaffolding of something much larger and more urgent: Mott’s novel also tells the story of Soot, a young Black boy living in a rural town in the recent past, and The Kid, a possibly imaginary child who appears to the author on his tour.`,
+    Content3: `As these characters’ stories build and converge, they astonish. For while this heartbreaking and magical book entertains and is at once about family, love of parents and children, art and money, it’s also about the nation’s reckoning with a tragic police shooting playing over and over again on the news. And with what it can mean to be Black in America.`,
+    Content4: `Who has been killed? Who is The Kid? Will the author finish his book tour, and what kind of world will he leave behind? Unforgettably told, with characters who burn into your mind and an electrifying plot ideal for book club discussion, Hell of a Book is the novel Mott has been writing in his head for the last ten years. And in its final twists, it truly becomes its title.`,
+    Content5: ``,
     Location: 'The Royale Hotel and Suite',
     Locationlink: 'https://goo.gl/maps/uzhwQJ5DQRLYGGUs8',
     Date: '3rd November 2021',
@@ -75,15 +63,11 @@ const Data = [
     Title: `Newly Published Books : Thier impact on User's Taste`,
     Links: `Newly-Published-Books-:-Thier-impact-on-User's-Taste`,
     Content1:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ante elementum, mattis tortor malesuada, consectetur risus. Praesent consequat imperdiet massa, sit amet ultricies orci malesuada nec. Donec fermentum urna ut dui ultrices rhoncus. Aliquam nec risus lacus. Fusce fermentum sapien sit amet ullamcorper varius. Suspendisse sit amet iaculis est. Aliquam lobortis urna nec turpis bibendum, sit amet venenatis nisi lacinia. Nunc dignissim dolor vitae tortor vestibulum, eget luctus lectus porta.',
-    Content2:
-      'Nullam tincidunt sapien sed sollicitudin facilisis. Ut hendrerit semper quam vel lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt condimentum finibus. Donec eu turpis nec dolor aliquet cursus. Proin sit amet egestas enim, quis fringilla sem. Etiam efficitur sollicitudin orci, eu scelerisque lorem hendrerit ac. Proin consectetur ut nibh sit amet suscipit. Morbi ullamcorper eu lorem sed lobortis. Sed consectetur dictum felis a laoreet. Nullam libero turpis, dapibus a ultricies sed, venenatis eget metus.',
-    Content3:
-      ' Phasellus consectetur risus quis ultrices interdum. Morbi auctor leo non augue semper, ac volutpat massa semper. Maecenas malesuada consequat lorem, quis aliquam leo convallis eu. Fusce odio ante, varius eu lacinia id, ultricies ut nisi. Proin rutrum lectus dolor, in sollicitudin risus malesuada vitae. Donec quis leo a velit pretium euismod. Suspendisse potenti. In hac habitasse platea dictumst. Mauris ac aliquam tortor. In sit amet tortor laoreet, facilisis neque ac, fermentum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis convallis dolor, sit amet tempor purus. Ut sed eleifend erat, a luctus dolor. Nulla eleifend ante consectetur magna efficitur cursus sit amet eget leo. Etiam arcu mi, fermentum eu ultricies suscipit, viverra ut ipsum. Phasellus commodo mattis sem at luctus.',
-    Content4:
-      'Phasellus lacus tortor, aliquet non tortor nec, accumsan vulputate libero. Nam semper tellus tellus, at ultrices lacus feugiat eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam finibus id ipsum hendrerit vulputate. Integer molestie sit amet lectus a viverra. Quisque vulputate tortor magna, id auctor arcu condimentum eu. Curabitur velit enim, varius vel faucibus in, hendrerit ut lorem. Suspendisse sed neque in libero sodales iaculis vitae id nisi. Phasellus laoreet enim suscipit pharetra sollicitudin. Morbi suscipit ipsum est, in mattis libero dictum id. Duis ut ipsum dui. Ut quis vehicula felis.',
-    Content5: `
-    Proin non vulputate enim, vitae elementum libero. Mauris convallis, urna sit amet dapibus ultrices, enim diam lobortis ligula, at hendrerit sapien felis in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor accumsan scelerisque. Aenean quis diam sit amet erat egestas scelerisque. Pellentesque posuere rutrum nulla, et efficitur leo interdum at. Pellentesque mattis, neque vel tincidunt cursus, turpis nunc tempor lectus, in tempor nibh dolor vel urna.`,
+      'Winner of the 2021 Sir Walter Raleigh Award for Fiction, Joyce Carol Oates Literary Prize Finalist, 2022 Chautauqua Prize Finalist, Willie Morris Award for Southern Writing Shortlist, and the 2021 Aspen Words Literary Prize shortlist.',
+    Content2: `In Jason Mott’s Hell of a Book, a Black author sets out on a cross-country publicity tour to promote his bestselling novel. That storyline drives Hell of a Book and is the scaffolding of something much larger and more urgent: Mott’s novel also tells the story of Soot, a young Black boy living in a rural town in the recent past, and The Kid, a possibly imaginary child who appears to the author on his tour.`,
+    Content3: `As these characters’ stories build and converge, they astonish. For while this heartbreaking and magical book entertains and is at once about family, love of parents and children, art and money, it’s also about the nation’s reckoning with a tragic police shooting playing over and over again on the news. And with what it can mean to be Black in America.`,
+    Content4: `Who has been killed? Who is The Kid? Will the author finish his book tour, and what kind of world will he leave behind? Unforgettably told, with characters who burn into your mind and an electrifying plot ideal for book club discussion, Hell of a Book is the novel Mott has been writing in his head for the last ten years. And in its final twists, it truly becomes its title.`,
+    Content5: ``,
     Location: 'Favourene House of Gold',
     Locationlink: 'https://goo.gl/maps/uzhwQJ5DQRLYGGUs8',
     Date: '4th November 2021',
@@ -98,15 +82,11 @@ const Data = [
     Title: 'Book club : Effect of Discrimination on our society',
     Links: 'Book-club-:-Effect-of-Discrimination-on-our-society',
     Content1:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ante elementum, mattis tortor malesuada, consectetur risus. Praesent consequat imperdiet massa, sit amet ultricies orci malesuada nec. Donec fermentum urna ut dui ultrices rhoncus. Aliquam nec risus lacus. Fusce fermentum sapien sit amet ullamcorper varius. Suspendisse sit amet iaculis est. Aliquam lobortis urna nec turpis bibendum, sit amet venenatis nisi lacinia. Nunc dignissim dolor vitae tortor vestibulum, eget luctus lectus porta.',
-    Content2:
-      'Nullam tincidunt sapien sed sollicitudin facilisis. Ut hendrerit semper quam vel lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt condimentum finibus. Donec eu turpis nec dolor aliquet cursus. Proin sit amet egestas enim, quis fringilla sem. Etiam efficitur sollicitudin orci, eu scelerisque lorem hendrerit ac. Proin consectetur ut nibh sit amet suscipit. Morbi ullamcorper eu lorem sed lobortis. Sed consectetur dictum felis a laoreet. Nullam libero turpis, dapibus a ultricies sed, venenatis eget metus.',
-    Content3:
-      ' Phasellus consectetur risus quis ultrices interdum. Morbi auctor leo non augue semper, ac volutpat massa semper. Maecenas malesuada consequat lorem, quis aliquam leo convallis eu. Fusce odio ante, varius eu lacinia id, ultricies ut nisi. Proin rutrum lectus dolor, in sollicitudin risus malesuada vitae. Donec quis leo a velit pretium euismod. Suspendisse potenti. In hac habitasse platea dictumst. Mauris ac aliquam tortor. In sit amet tortor laoreet, facilisis neque ac, fermentum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis convallis dolor, sit amet tempor purus. Ut sed eleifend erat, a luctus dolor. Nulla eleifend ante consectetur magna efficitur cursus sit amet eget leo. Etiam arcu mi, fermentum eu ultricies suscipit, viverra ut ipsum. Phasellus commodo mattis sem at luctus.',
-    Content4:
-      'Phasellus lacus tortor, aliquet non tortor nec, accumsan vulputate libero. Nam semper tellus tellus, at ultrices lacus feugiat eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam finibus id ipsum hendrerit vulputate. Integer molestie sit amet lectus a viverra. Quisque vulputate tortor magna, id auctor arcu condimentum eu. Curabitur velit enim, varius vel faucibus in, hendrerit ut lorem. Suspendisse sed neque in libero sodales iaculis vitae id nisi. Phasellus laoreet enim suscipit pharetra sollicitudin. Morbi suscipit ipsum est, in mattis libero dictum id. Duis ut ipsum dui. Ut quis vehicula felis.',
-    Content5: `
-    Proin non vulputate enim, vitae elementum libero. Mauris convallis, urna sit amet dapibus ultrices, enim diam lobortis ligula, at hendrerit sapien felis in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor accumsan scelerisque. Aenean quis diam sit amet erat egestas scelerisque. Pellentesque posuere rutrum nulla, et efficitur leo interdum at. Pellentesque mattis, neque vel tincidunt cursus, turpis nunc tempor lectus, in tempor nibh dolor vel urna.`,
+      'Winner of the 2021 Sir Walter Raleigh Award for Fiction, Joyce Carol Oates Literary Prize Finalist, 2022 Chautauqua Prize Finalist, Willie Morris Award for Southern Writing Shortlist, and the 2021 Aspen Words Literary Prize shortlist.',
+    Content2: `In Jason Mott’s Hell of a Book, a Black author sets out on a cross-country publicity tour to promote his bestselling novel. That storyline drives Hell of a Book and is the scaffolding of something much larger and more urgent: Mott’s novel also tells the story of Soot, a young Black boy living in a rural town in the recent past, and The Kid, a possibly imaginary child who appears to the author on his tour.`,
+    Content3: `As these characters’ stories build and converge, they astonish. For while this heartbreaking and magical book entertains and is at once about family, love of parents and children, art and money, it’s also about the nation’s reckoning with a tragic police shooting playing over and over again on the news. And with what it can mean to be Black in America.`,
+    Content4: `Who has been killed? Who is The Kid? Will the author finish his book tour, and what kind of world will he leave behind? Unforgettably told, with characters who burn into your mind and an electrifying plot ideal for book club discussion, Hell of a Book is the novel Mott has been writing in his head for the last ten years. And in its final twists, it truly becomes its title.`,
+    Content5: ``,
     Location: 'Takway Square Illam',
     Locationlink: 'https://goo.gl/maps/uzhwQJ5DQRLYGGUs8',
     Date: '5th November 2021',
@@ -121,15 +101,11 @@ const Data = [
     Title: 'Book Club: Young Adults Trivia with Loyalty and MoonLit',
     Links: 'Book-Club:-Young-Adults-Trivia-with-Loyalty-and-MoonLit',
     Content1:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ante elementum, mattis tortor malesuada, consectetur risus. Praesent consequat imperdiet massa, sit amet ultricies orci malesuada nec. Donec fermentum urna ut dui ultrices rhoncus. Aliquam nec risus lacus. Fusce fermentum sapien sit amet ullamcorper varius. Suspendisse sit amet iaculis est. Aliquam lobortis urna nec turpis bibendum, sit amet venenatis nisi lacinia. Nunc dignissim dolor vitae tortor vestibulum, eget luctus lectus porta.',
-    Content2:
-      'Nullam tincidunt sapien sed sollicitudin facilisis. Ut hendrerit semper quam vel lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt condimentum finibus. Donec eu turpis nec dolor aliquet cursus. Proin sit amet egestas enim, quis fringilla sem. Etiam efficitur sollicitudin orci, eu scelerisque lorem hendrerit ac. Proin consectetur ut nibh sit amet suscipit. Morbi ullamcorper eu lorem sed lobortis. Sed consectetur dictum felis a laoreet. Nullam libero turpis, dapibus a ultricies sed, venenatis eget metus.',
-    Content3:
-      ' Phasellus consectetur risus quis ultrices interdum. Morbi auctor leo non augue semper, ac volutpat massa semper. Maecenas malesuada consequat lorem, quis aliquam leo convallis eu. Fusce odio ante, varius eu lacinia id, ultricies ut nisi. Proin rutrum lectus dolor, in sollicitudin risus malesuada vitae. Donec quis leo a velit pretium euismod. Suspendisse potenti. In hac habitasse platea dictumst. Mauris ac aliquam tortor. In sit amet tortor laoreet, facilisis neque ac, fermentum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis convallis dolor, sit amet tempor purus. Ut sed eleifend erat, a luctus dolor. Nulla eleifend ante consectetur magna efficitur cursus sit amet eget leo. Etiam arcu mi, fermentum eu ultricies suscipit, viverra ut ipsum. Phasellus commodo mattis sem at luctus.',
-    Content4:
-      'Phasellus lacus tortor, aliquet non tortor nec, accumsan vulputate libero. Nam semper tellus tellus, at ultrices lacus feugiat eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam finibus id ipsum hendrerit vulputate. Integer molestie sit amet lectus a viverra. Quisque vulputate tortor magna, id auctor arcu condimentum eu. Curabitur velit enim, varius vel faucibus in, hendrerit ut lorem. Suspendisse sed neque in libero sodales iaculis vitae id nisi. Phasellus laoreet enim suscipit pharetra sollicitudin. Morbi suscipit ipsum est, in mattis libero dictum id. Duis ut ipsum dui. Ut quis vehicula felis.',
-    Content5: `
-    Proin non vulputate enim, vitae elementum libero. Mauris convallis, urna sit amet dapibus ultrices, enim diam lobortis ligula, at hendrerit sapien felis in nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor accumsan scelerisque. Aenean quis diam sit amet erat egestas scelerisque. Pellentesque posuere rutrum nulla, et efficitur leo interdum at. Pellentesque mattis, neque vel tincidunt cursus, turpis nunc tempor lectus, in tempor nibh dolor vel urna.`,
+      'Winner of the 2021 Sir Walter Raleigh Award for Fiction, Joyce Carol Oates Literary Prize Finalist, 2022 Chautauqua Prize Finalist, Willie Morris Award for Southern Writing Shortlist, and the 2021 Aspen Words Literary Prize shortlist.',
+    Content2: `In Jason Mott’s Hell of a Book, a Black author sets out on a cross-country publicity tour to promote his bestselling novel. That storyline drives Hell of a Book and is the scaffolding of something much larger and more urgent: Mott’s novel also tells the story of Soot, a young Black boy living in a rural town in the recent past, and The Kid, a possibly imaginary child who appears to the author on his tour.`,
+    Content3: `As these characters’ stories build and converge, they astonish. For while this heartbreaking and magical book entertains and is at once about family, love of parents and children, art and money, it’s also about the nation’s reckoning with a tragic police shooting playing over and over again on the news. And with what it can mean to be Black in America.`,
+    Content4: `Who has been killed? Who is The Kid? Will the author finish his book tour, and what kind of world will he leave behind? Unforgettably told, with characters who burn into your mind and an electrifying plot ideal for book club discussion, Hell of a Book is the novel Mott has been writing in his head for the last ten years. And in its final twists, it truly becomes its title.`,
+    Content5: ``,
     Location: 'The Venue Hotel',
     Locationlink: 'https://goo.gl/maps/uzhwQJ5DQRLYGGUs8',
     Date: '6th November 2021',

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useGlobalContext } from '../../lib/Context'
 import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 import Navbar from '../navbar/Navbar'
@@ -7,6 +8,7 @@ import { commerce } from '../../lib/commerce.js'
 import Loading from '../Loading/Loading'
 
 function Product({ notify }) {
+  const { setCart } = useGlobalContext()
   const [loading, setLoading] = useState(true)
   const { Links } = useParams()
   const [id, setId] = useState()
@@ -22,18 +24,11 @@ function Product({ notify }) {
   const [language, setLanguage] = useState('')
   const [description, setDescription] = useState('')
 
-  const [cart, setCart] = useState({})
-
   const fetchProduct = async () => {
     const { data } = await commerce.products.list({ limit: 100 })
     setLoading(false)
     return data
   }
-  const fetchCart = async () => {
-    const data = await commerce.cart.retrieve()
-    return data
-  }
-
   const handleCart = async (productId, quantity) => {
     const item = await commerce.cart.add(productId, quantity)
     setCart(item.cart)
@@ -64,20 +59,13 @@ function Product({ notify }) {
         setId(newProduct.id)
       })
     }
-    const miracle = async () => {
-      fetchCart().then((data) => {
-        setCart(data)
-        console.log(data)
-      })
-    }
     ivie()
-    miracle()
   }, [Links])
   return loading ? (
     <Loading />
   ) : (
     <>
-      <Navbar totalItems={cart.total_items} />
+      <Navbar />
       <div className='product'>
         <div className='product__left'>
           <img src={image} alt='' />
@@ -88,7 +76,7 @@ function Product({ notify }) {
             <h2>
               By{' '}
               <span>
-                <Link to={`/${authorlink}`}>{author}</Link>
+                <Link to={`/author/${authorlink}`}>{author}</Link>
               </span>
             </h2>
             <h3>
